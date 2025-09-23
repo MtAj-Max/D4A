@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="mp0">
+<div class="mTop">Start with your free account today!</div>
+<div class="login-box"><form id="signupform" name="signupform" action="//accounts.zoho.com/webclient/v1/register/initiate?service_language=en" method="post" novalidate="novalidate" autocomplete="off"><div>
+<div align="center"><img class="serviceLogo" src="https://www.zoho.com/sites/zweb/images/productlogos/crm.png" alt="Zoho CRM"></div>
+<table class="signupTable"><tbody><tr><td> 
+<div class="welcomeMessage">Sign Up for Zoho CRM   </div> </td></tr><tr><td> <div class="companyNameDiv"><input class="sgnemail" type="text" id="companyName" name="x_r_address/1.company_name" value="" placeholder="Company Name"></div></td></tr><tr><td> <div class="za-email-container sgfrm"><div class="poRel"><!--   <input id="emailfield" class="form-input" type="email" onkeypress="hideMsg(this)" name="email" placeholder="Email Address">--> <input id="email" class="sgnemail form-input" type="text" value="" placeholder="Email Address" name="email"></div></div></td></tr><tr><td class="pB0"> <div id="zppassword" class="za-password-container sgfrm"><div class="rel"><input id="password" class="sgnemail form-input pwdStg" type="password" placeholder="Password" name="password" onkeypress="hideMsg(this)"><div class="column show-password fr" id="show-password" onclick="togglePasswordField();"><span class="icon-medium uncheckedpass" id="show-password-icon"></span> <label id="show-password-label">Show</label></div></div></div></td></tr><tr id="za_end_email" style="display: none;"><td> <input id="zs_end_email" class="sgnemail form-input" type="text" placeholder="End user email" name="x_end_user_email">
+<div class="end_field_msg" style="display:none"><span id="zs_end_email-error_store" class="error jqval-error">This field is required</span></div><div class="end_field_msg_sameemail" style="display:none"><span id="zs_end_email-error_store" class="error jqval-error">End user email should not be same as provided Email</span></div><div class="end_field_msg_samedomain" style="display:none"><span id="zs_end_email-error_store" class="error jqval-error">Please enter customer email that doesn't have partner domain</span></div></td></tr><tr><td> <div class="zs-ml34 disBlock"><div class="rel"><input id="r_address/1.phone" class="sgnemail form-input" value="" type="text" name="r_address/1.phone" maxlength="120" placeholder="Phone"></div></div></td></tr>
+<tr class="za-country-container"><td> <div class="za-country-container-arrow"><select class="form-input countryCnt za-country-select" name="x_country" id="country" tabindex="1" placeholder="Select country or region" aria-invalid="false">
+<option value="United States">United States</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="Japan">Japan</option>
+<option value="China">China</option>
+<option value="Australia">Australia</option>
+<option value="India">India</option>
+<option value="Afghanistan">Afghanistan</option>
+<option value="Aland Islands">Aland Islands</option>
+<option value="Albania">Albania</option>
+<option value="Algeria">Algeria</option>
+<option value="American Samoa">American Samoa</option>
+<option value="Andorra">Andorra</option>
+<option value="Angola">Angola</option>
+<option value="Anguilla">Anguilla</option>
+<option value="Antarctica">Antarctica</option>
+<option value="Antigua and Barbuda">Antigua and Barbuda</option>
+<option value="Argentina">Argentina</option>
+<option value="Armenia">Armenia</option>
+<option value="Aruba">Aruba</option>
+<option value="Austria">Austria</option>
+<option value="Azerbaijan">Azerbaijan</option>
+<option value="Bahamas">Bahamas</option>
+<option value="Bahrain">Bahrain</option>
+<option value="Bangladesh">Bangladesh</option>
+<option value="Barbados">Barbados</option>
+<option value="Belarus">Belarus</option>
+<option value="Belgium">Belgium</option>
+<option value="Belize">Belize</option>
+<option value="Benin">Benin</option>
+<option value="Bermuda">Bermuda</option>
+<option value="Bhutan">Bhutan</option>
+<option value="Bolivia">Bolivia</option>
+<option value="Bonaire">Bonaire</option>
+<option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+<option value="Botswana">Botswana</option>
+<option value="Bouvet Island">Bouvet Island</option>
+<option value="Brazil">Brazil</option>
+<option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+<option value="Brunei Darussalam">Brunei Darussalam</option>
+<option value="Bulgaria">Bulgaria</option>
+<option value="Burkina Faso">Burkina Faso</option>
+<option value="Burundi">Burundi</option>
+<option value="Cambodia">Cambodia</option>
+<option value="Cameroon">Cameroon</option>
+<option value="Canada">Canada</option>
+<option value="Cape Verde">Cape Verde</option>
+<option value="Cayman Islands">Cayman Islands</option>
+<option value="Central African Republic">Central African Republic</option>
+<option value="Chad">Chad</option>
+<option value="Chile">Chile</option>
+<option value="Christmas Island">Christmas Island</option>
+<option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+<option value="Colombia">Colombia</option>
+<option value="Comoros">Comoros</option>
+<option value="Congo">Congo</option>
+<option value="Congo, Democratic Republic">Congo, Democratic Republic</option>
+<option value="Cook Islands">Cook Islands</option>
+<option value="Costa Rica">Costa Rica</option>
+<option value="Cote d" ivoire'="">Cote d'Ivoire</option>
+<option value="Croatia">Croatia</option>
+<option value="Curacao">Curacao</option>
+<option value="Cyprus">Cyprus</option>
+<option value="Czech Republic">Czech Republic</option>
+<option value="Denmark">Denmark</option>
+<option value="Djibouti">Djibouti</option>
+<option value="Dominica">Dominica</option>
+<option value="Dominican Republic">Dominican Republic</option>
+<option value="East Timor">East Timor</option>
+<option value="Ecuador">Ecuador</option>
+<option value="Egypt">Egypt</option>
+<option value="El Salvador">El Salvador</option>
+<option value="Equatorial Guinea">Equatorial Guinea</option>
+<option value="Eritrea">Eritrea</option>
+<option value="Estonia">Estonia</option>
+<option value="Ethiopia">Ethiopia</option>
+<option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+<option value="Faroe Islands">Faroe Islands</option>
+<option value="Fiji">Fiji</option>
+<option value="Finland">Finland</option>
+<option value="France">France</option>
+<option value="French Guiana">French Guiana</option>
+<option value="French Polynesia">French Polynesia</option>
+<option value="French Southern Territories">French Southern Territories</option>
+<option value="Gabon">Gabon</option>
+<option value="Gambia">Gambia</option>
+<option value="Georgia">Georgia</option>
+<option value="Germany">Germany</option>
+<option value="Ghana">Ghana</option>
+<option value="Gibraltar">Gibraltar</option>
+<option value="Greece">Greece</option>
+<option value="Greenland">Greenland</option>
+<option value="Grenada">Grenada</option>
+<option value="Guadeloupe">Guadeloupe</option>
+<option value="Guam">Guam</option>
+<option value="Guatemala">Guatemala</option>
+<option value="Guernsey">Guernsey</option>
+<option value="Guinea">Guinea</option>
+<option value="Guinea-bissau">Guinea-bissau</option>
+<option value="Guyana">Guyana</option>
+<option value="Haiti">Haiti</option>
+<option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+<option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+<option value="Honduras">Honduras</option>
+<option value="Hong Kong">Hong Kong</option>
+<option value="Hungary">Hungary</option>
+<option value="Iceland">Iceland</option>
+<option value="Indonesia">Indonesia</option>
+<option value="Iraq">Iraq</option>
+<option value="Ireland">Ireland</option>
+<option value="Isle Of Man">Isle Of Man</option>
+<option value="Israel">Israel</option>
+<option value="Italy">Italy</option>
+<option value="Jamaica">Jamaica</option>
+<option value="Jersey">Jersey</option>
+<option value="Jordan">Jordan</option>
+<option value="Kazakhstan">Kazakhstan</option>
+<option value="Kenya">Kenya</option>
+<option value="Kiribati">Kiribati</option>
+<option value="Kosovo">Kosovo</option>
+<option value="Kuwait">Kuwait</option>
+<option value="Kyrgyzstan">Kyrgyzstan</option>
+<option value="Laos">Laos</option>
+<option value="Latvia">Latvia</option>
+<option value="Lebanon">Lebanon</option>
+<option value="Lesotho">Lesotho</option>
+<option value="Liberia">Liberia</option>
+<option value="Libya">Libya</option>
+<option value="Liechtenstein">Liechtenstein</option>
+<option value="Lithuania">Lithuania</option>
+<option value="Luxembourg">Luxembourg</option>
+<option value="Macau">Macau</option>
+<option value="Macedonia, The Former Yug">Macedonia, The Former Yug</option>
+<option value="Madagascar">Madagascar</option>
+<option value="Malawi">Malawi</option>
+<option value="Malaysia">Malaysia</option>
+<option value="Maldives">Maldives</option>
+<option value="Mali">Mali</option>
+<option value="Malta">Malta</option>
+<option value="Marshall Islands">Marshall Islands</option>
+<option value="Martinique">Martinique</option>
+<option value="Mauritania">Mauritania</option>
+<option value="Mauritius">Mauritius</option>
+<option value="Mayotte">Mayotte</option>
+<option value="Mexico">Mexico</option>
+<option value="Micronesia, Federated States">Micronesia, Federated States</option>
+<option value="Moldova">Moldova</option>
+<option value="Monaco">Monaco</option>
+<option value="Mongolia">Mongolia</option>
+<option value="Montenegro">Montenegro</option>
+<option value="Montserrat">Montserrat</option>
+<option value="Morocco">Morocco</option>
+<option value="Mozambique">Mozambique</option>
+<option value="Myanmar">Myanmar</option>
+<option value="Namibia">Namibia</option>
+<option value="Nauru">Nauru</option>
+<option value="Nepal">Nepal</option>
+<option value="Netherlands">Netherlands</option>
+<option value="Netherlands Antilles">Netherlands Antilles</option>
+<option value="New Caledonia">New Caledonia</option>
+<option value="New Zealand">New Zealand</option>
+<option value="Nicaragua">Nicaragua</option>
+<option value="Niger">Niger</option>
+<option value="Nigeria">Nigeria</option>
+<option value="Niue">Niue</option>
+<option value="Norfolk Island">Norfolk Island</option>
+<option value="Northern Mariana Islands">Northern Mariana Islands</option>
+<option value="Norway">Norway</option>
+<option value="Oman">Oman</option>
+<option value="Pakistan">Pakistan</option>
+<option value="Palau">Palau</option>
+<option value="Palestine">Palestine</option>
+<option value="Panama">Panama</option>
+<option value="Papua New Guinea">Papua New Guinea</option>
+<option value="Paraguay">Paraguay</option>
+<option value="Peru">Peru</option>
+<option value="Philippines">Philippines</option>
+<option value="Pitcairn">Pitcairn</option>
+<option value="Poland">Poland</option>
+<option value="Portugal">Portugal</option>
+<option value="Puerto Rico">Puerto Rico</option>
+<option value="Qatar">Qatar</option>
+<option value="Reunion">Reunion</option>
+<option value="Romania">Romania</option>
+<option value="Rwanda">Rwanda</option>
+<option value="Saint Barthelemy">Saint Barthelemy</option>
+<option value="Saint Helena">Saint Helena</option>
+<option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+<option value="Saint Lucia">Saint Lucia</option>
+<option value="Saint Martin (French Part)">Saint Martin (French Part)</option>
+<option value="Saint Pierre And Miquelon">Saint Pierre And Miquelon</option>
+<option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+<option value="Samoa">Samoa</option>
+<option value="San Marino">San Marino</option>
+<option value="Sao Tome and Principe">Sao Tome and Principe</option>
+<option value="Saudi Arabia">Saudi Arabia</option>
+<option value="Senegal">Senegal</option>
+<option value="Serbia">Serbia</option>
+<option value="Seychelles">Seychelles</option>
+<option value="Sierra Leone">Sierra Leone</option>
+<option value="Singapore">Singapore</option>
+<option value="Sint Maarten (Dutch Part)">Sint Maarten (Dutch Part)</option>
+<option value="Slovakia">Slovakia</option>
+<option value="Slovenia">Slovenia</option>
+<option value="Solomon Islands">Solomon Islands</option>
+<option value="Somalia">Somalia</option>
+<option value="South Africa">South Africa</option>
+<option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+<option value="South Korea">South Korea</option>
+<option value="South Sudan">South Sudan</option>
+<option value="Spain">Spain</option>
+<option value="Sri Lanka">Sri Lanka</option>
+<option value="Suriname">Suriname</option>
+<option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+<option value="Swaziland">Swaziland</option>
+<option value="Sweden">Sweden</option>
+<option value="Switzerland">Switzerland</option>
+<option value="Taiwan">Taiwan</option>
+<option value="Tajikistan">Tajikistan</option>
+<option value="Tanzania">Tanzania</option>
+<option value="Thailand">Thailand</option>
+<option value="Togo">Togo</option>
+<option value="Tokelau">Tokelau</option>
+<option value="Tonga">Tonga</option>
+<option value="Trinidad and Tobago">Trinidad and Tobago</option>
+<option value="Tunisia">Tunisia</option>
+<option value="Turkey">Turkey</option>
+<option value="Turkmenistan">Turkmenistan</option>
+<option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+<option value="Tuvalu">Tuvalu</option>
+<option value="Uganda">Uganda</option>
+<option value="Ukraine">Ukraine</option>
+<option value="United Arab Emirates">United Arab Emirates</option>
+<option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+<option value="Uruguay">Uruguay</option>
+<option value="Uzbekistan">Uzbekistan</option>
+<option value="Vanuatu">Vanuatu</option>
+<option value="Venezuela">Venezuela</option>
+<option value="Vietnam">Vietnam</option>
+<option value="Virgin Islands (British)">Virgin Islands (British)</option>
+<option value="Virgin Islands (U.S.)">Virgin Islands (U.S.)</option>
+<option value="Wallis and Futuna">Wallis and Futuna</option>
+<option value="Western Sahara">Western Sahara</option>
+<option value="Yemen">Yemen</option>
+<option value="Yugoslavia">Yugoslavia</option>
+<option value="Zambia">Zambia</option>
+<option value="Zimbabwe">Zimbabwe</option></select></div></td></tr><tr class="za-state-container"><td><div class="za-state-container-arrow"><select class="form-input countryCnt za-state-select" name="x_state" id="state" tabindex="1" placeholder="State" aria-invalid="false"><option value="Andhra Pradesh">Andhra Pradesh</option><option value="Arunachal Pradesh">Arunachal Pradesh</option><option value="Assam">Assam</option><option value="Bihar">Bihar</option><option value="Chhattisgarh">Chhattisgarh</option><option value="Delhi">Delhi</option><option value="Goa">Goa</option><option value="Gujarat">Gujarat</option><option value="Haryana">Haryana</option><option value="Himachal Pradesh">Himachal Pradesh</option><option value="Jammu and Kashmir">Jammu and Kashmir</option><option value="Jharkhand">Jharkhand</option><option value="Karnataka">Karnataka</option><option value="Kerala">Kerala</option><option value="Madhya Pradesh">Madhya Pradesh</option><option value="Maharashtra">Maharashtra</option><option value="Manipur">Manipur</option><option value="Meghalaya">Meghalaya</option><option value="Mizoram">Mizoram</option><option value="Nagaland">Nagaland</option><option value="Odisha">Odisha</option><option value="Punjab">Punjab</option><option value="Rajasthan">Rajasthan</option><option value="Sikkim">Sikkim</option><option value="Tamil Nadu">Tamil Nadu</option><option value="Telangana">Telangana</option><option value="Tripura">Tripura</option><option value="Uttarakhand">Uttarakhand</option><option value="Uttar Pradesh">Uttar Pradesh</option><option value="West Bengal">West Bengal</option><option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option><option value="Chandigarh">Chandigarh</option><option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option><option value="Lakshadweep">Lakshadweep</option><option value="Puducherry">Puducherry</option><option value="Ladakh">Ladakh</option></select></div></td></tr><tr id="signupplan"></tr><tr><td> <div class="za-captcha-container zs-ml34" style="display: none;"><div class="fl captchaTxtBox"><input class="sgnemail form-input capchaInput" type="text" name="captcha" placeholder="Enter the text" disabled="disabled"></div><div class="fl fontR captchaBox bgNone"><img class="za-captcha" src="https://accounts.zoho.com/accounts/images/spacer.gif"> <span onclick="changeHip(document.signupform)" class="za-refresh-captcha"></span></div></div></td></tr><tr><td class="signUp-tdAlignLeft"> <div class="za-tos-container fontR"><label class="sign_agree" for="tos">
+<span id="signup-termservice" class="unchecked"></span> I agree to the <a target="_parent" href="https://www.zoho.com/terms.html">Terms of Service</a> and <a target="_parent" href="https://www.zoho.com/privacy.html">Privacy Policy</a> 
+<input class="za-tos" id="tos" name="tos" value="false" onclick="toggleTosField();getTosValue();" type="checkbox"></label></div></td></tr><tr class="za-newsletter-container" style="display: none;"><td class="signUp-tdAlignLeft"> <div class="za-tos-container fontR"><label for="newsletter" class="news-signup">
+<input tabindex="1" class="za-newsletter" type="checkbox" id="newsletter" name="newsletter" value="true" onclick="toggleNewsletterField()"><span class="unchecked" id="signup-newsletter"></span> I would like to receive marketing communication from Zoho and Zoho's regional partners regarding Zoho's products, services, and events. 
+</label></div></td></tr><tr><td><section class="signupotpcontainer" style="display: none"> 
+<div class="verifytitle">Verify your sign-up</div>
+<div class="verifyheader">Enter the one-time password sent to your mobile number.</div>
+<dl class="za-otp-container" style="display: none;">	<dd><input type="text" class="form-input" tabindex="1" name="otp" id="otpfield" placeholder="Enter OTP" disabled="disabled"><span onclick="resendOTP()" class="resendotp">Resend OTP</span></dd></dl>
+<dl class="za-submitbtn-otp"><dd><input type="button" tabindex="1" class="signupbtn" value="VERIFY" onclick="validateOTP()" name="otpfield"><div class="loadingImg"></div></dd> </dl></section> </td></tr><tr><td> <div><button class="submit-btn submitSignUp button large bold"> <div class="signupArea"><div class="btnSignup">Sign Up</div><div id="LoadingImage" class="successLoading"></div></div></button></div></td></tr></tbody></table></div><!--  <input type="hidden" value="" id="businessPlan" name="bp"/>-->  
+<!-- <input type="hidden" value="" id="individualPlan" name="ip"/>-->
+<input type="hidden" value="a2ff4afbf490697b541779b727c18f78" name="x_cid"><input type="hidden" value="" name="x_gclid"><input type="hidden" value="" name="x_pack"><input type="hidden" value="" name="x_customerdiscount"><input type="hidden" name="country" value="in"><input type="hidden" name="language" value="en">
+<!--  <input type="hidden" value="" name="userlocale"/>-->
+<input type="hidden" name="lastname"></form></div><script crossorigin="anonymous" src="https://accounts.zoho.com/register/script?mode=01&amp;servicename=ZohoPayments&amp;dcc=true&amp;load_css=true&amp;load_country=false&amp;service_language=en&amp;use_ott=true&amp;serviceurl=/jsp/RedirectHandler.jsp?x_cid=5d1bc8f67a754252efa0147794fed789"></script><script crossorigin="anonymous" type="text/javascript">var signup = {
+phonevalidation : false,
+setTimeOut : false,
+serUrl :  "http:\/\/crm.zoho.com"
+}
+var multiFields = [];
+
+var customRegex = {};
+function getTosValue() {
+$("input[name=tos]").val($("#tos").is(":checked")); //No I18N
+}
+function constrcutStateOptions(countryName, stateJson){
+//stateInputchange
+var text = '';
+text = '<td><div class="za-state-container-arrow">';
+//stateUtil.stateDropdownSupported(countryName) replace with this in future
+if(["India","United States","Canada","Japan"].indexOf(countryName) !== -1){
+text += '<select class="form-input countryCnt za-state-select" name="x_state" id="state" tabindex="1" placeholder="State" aria-invalid="false">';
+var countryState = stateJson[countryName];
+$.each(countryState, function(i, val){
+text += '<option value="'+val.STATE+'">'+val.STATE+'</option>';
+});
+text +='</select>';
+} else {
+text += '<input class="sgnemail form-input" type="text" name="x_state" id="state" placeholder="State" >';
+}
+text += '</div></td>';
+return text;
+}
+function setCountryCode(countrycode, country){
+var code = "";
+if(countrycode!==""){
+code = countrycode;
+}else{
+var countryCodeJson = {"Papua New Guinea":"PG","Cambodia":"KH","Kazakhstan":"KZ","Paraguay":"PY","Bahamas":"BS","Solomon Islands":"SB","Montserrat":"MS","Mali":"ML","Marshall Islands":"MH","Guadeloupe":"GP","Panama":"PA","Laos":"LA","Argentina":"AR","Isle Of Man":"IM","Seychelles":"SC","Belize":"BZ","Zambia":"ZM","Bahrain":"BH","Congo":"CG","Saint Barthelemy":"BL","Namibia":"NA","Comoros":"KM","Faroe Islands":"FO","Finland":"FI","Netherlands Antilles":"AN","Georgia":"GE","Saint Kitts and Nevis":"KN","Yemen":"YE","Eritrea":"ER","Puerto Rico":"PR","Aruba":"AW","Madagascar":"MG","Libya":"LY","Svalbard and Jan Mayen":"SJ","Sweden":"SE","Cocos (Keeling) Islands":"CC","Malawi":"MW","Andorra":"AD","Liechtenstein":"LI","Poland":"PL","Bulgaria":"BG","Jordan":"JO","Tunisia":"TN","Tuvalu":"TV","United Arab Emirates":"AE","Kenya":"KE","French Polynesia":"PF","Djibouti":"DJ","Lebanon":"LB","Azerbaijan":"AZ","Czech Republic":"CZ","Saint Martin (French Part)":"MF","Mauritania":"MR","Saint Lucia":"LC","Guernsey":"GG","Mayotte":"YT","Israel":"IL","San Marino":"SM","Australia":"AU","Bonaire":"BQ","Tajikistan":"TJ","Myanmar":"MM","Cameroon":"CM","Gibraltar":"GI","Cyprus":"CY","Northern Mariana Islands":"MP","Malaysia":"MY","Iceland":"IS","Oman":"OM","Armenia":"AM","Gabon":"GA","Yugoslavia":"YU","Luxembourg":"LU","Brazil":"BR","Turks and Caicos Islands":"TC","Algeria":"DZ","Jersey":"JE","Slovenia":"SI","Antigua and Barbuda":"AG","Colombia":"CO","Ecuador":"EC","Moldova":"MD","Vanuatu":"VU","United States Minor Outlying Islands":"UM","Honduras":"HN","Italy":"IT","Antarctica":"AQ","Nauru":"NR","Guinea-bissau":"GW","Haiti":"HT","Afghanistan":"AF","Burundi":"BI","Singapore":"SG","French Guiana":"GF","American Samoa":"AS","Christmas Island":"CX","Macedonia, The Former Yug":"MK","Netherlands":"NL","China":"CN","Martinique":"MQ","Kyrgyzstan":"KG","Reunion":"RE","Saint Pierre And Miquelon":"PM","Bhutan":"BT","Romania":"RO","Falkland Islands (Malvinas)":"FK","Togo":"TG","Philippines":"PH","Cote d'Ivoire":"CI","Holy See (Vatican City State)":"VA","Uzbekistan":"UZ","Pitcairn":"PN","Zimbabwe":"ZW","British Indian Ocean Territory":"IO","Montenegro":"ME","Dominica":"DM","Indonesia":"ID","Benin":"BJ","Angola":"AO","Virgin Islands (British)":"VG","East Timor":"TL","Brunei Darussalam":"BN","Portugal":"PT","New Caledonia":"NC","Grenada":"GD","Cayman Islands":"KY","Greece":"GR","Sint Maarten (Dutch Part)":"SX","Latvia":"LV","Mongolia":"MN","Morocco":"MA","Guatemala":"GT","Guyana":"GY","South Georgia and The South Sandwich Islands":"GS","Iraq":"IQ","Chile":"CL","Nepal":"NP","Tanzania":"TZ","Ukraine":"UA","Ghana":"GH","Anguilla":"AI","India":"IN","Canada":"CA","Congo, Democratic Republic":"CD","Maldives":"MV","Turkey":"TR","Belgium":"BE","Taiwan":"TW","South Africa":"ZA","Trinidad and Tobago":"TT","Bermuda":"BM","Aland Islands":"AX","Central African Republic":"CF","Jamaica":"JM","Peru":"PE","Turkmenistan":"TM","Germany":"DE","Fiji":"FJ","Tokelau":"TK","Hong Kong":"HK","United States":"US","Guinea":"GN","Chad":"TD","Somalia":"SO","Sao Tome and Principe":"ST","Thailand":"TH","Equatorial Guinea":"GQ","Kiribati":"KI","Costa Rica":"CR","Saint Vincent and The Grenadines":"VC","Vietnam":"VN","Kuwait":"KW","Nigeria":"NG","Croatia":"HR","Cook Islands":"CK","Sri Lanka":"LK","Uruguay":"UY","United Kingdom":"GB","Switzerland":"CH","Samoa":"WS","Palestine":"PS","Spain":"ES","Liberia":"LR","Venezuela":"VE","Burkina Faso":"BF","Swaziland":"SZ","Palau":"PW","Estonia":"EE","Wallis and Futuna":"WF","Niue":"NU","Austria":"AT","South Korea":"KR","Mozambique":"MZ","El Salvador":"SV","Monaco":"MC","Guam":"GU","Lesotho":"LS","Tonga":"TO","Western Sahara":"EH","Hungary":"HU","South Sudan":"SS","Japan":"JP","Belarus":"BY","Curacao":"CW","Mauritius":"MU","Bouvet Island":"BV","Albania":"AL","Norfolk Island":"NF","Virgin Islands (U.S.)":"VI","New Zealand":"NZ","Senegal":"SN","Ethiopia":"ET","Micronesia, Federated States":"FM","Egypt":"EG","Macau":"MO","Sierra Leone":"SL","Bolivia":"BO","Malta":"MT","Saudi Arabia":"SA","Cape Verde":"CV","Pakistan":"PK","Kosovo":"XK","Gambia":"GM","Ireland":"IE","Qatar":"QA","Heard Island and Mcdonald Islands":"HM","Slovakia":"SK","France":"FR","Lithuania":"LT","Serbia":"RS","Bosnia and Herzegovina":"BA","Niger":"NE","Rwanda":"RW","French Southern Territories":"TF","Bangladesh":"BD","Barbados":"BB","Nicaragua":"NI","Norway":"NO","Botswana":"BW","Denmark":"DK","Dominican Republic":"DO","Mexico":"MX","Uganda":"UG","Suriname":"SR","Greenland":"GL","Saint Helena":"SH"}
+code = countryCodeJson[country]; 
+}
+$("input[name=country]").val(code.toLowerCase());
+}
+function getAllowedCountries(){
+$.ajax({
+url: "/api/internal/partner/allowedcountries?id="+$('input[name="x_cid"]').val(),//NO I18N
+type: "GET",//NO I18N
+dataType: "json",	//NO I18N
+contentType: 'application/json; charset=utf-8', // NO I18N
+success: function(data) {
+if(data.length > 0){
+$(".za-country-select").empty();
+$(".za-state-container").html('');
+for(i=0; i < data.length;i++){
+$(".za-country-select").append(new Option(data[i],data[i]))
+}
+$('select#country').trigger('change');// NO I18N
+}
+}
+});
+}
+function handleOnSignupSuccess(){
+var timeDiff=5000;
+setTimeout(function(){
+window.parent.location = signup.serUrl;
+},timeDiff);
+}
+function onSignupReady() {
+$('#zs_end_email').val('');
+$('#za_end_email').hide();
+var ipCountry = "India";
+if($("#country option[value='"+ipCountry+"']").length > 0){
+$("#country").val(ipCountry);
+}
+var country = $("#country").val();
+var stateJson = {"New Zealand":[{"STATECODE":"NL","COUNTRY":"New Zealand","STATE":"Northland"},{"STATECODE":"AUK","COUNTRY":"New Zealand","STATE":"Auckland"},{"STATECODE":"WKO","COUNTRY":"New Zealand","STATE":"Waikato"},{"STATECODE":"BOP","COUNTRY":"New Zealand","STATE":"Bay of Plenty"},{"STATECODE":"GIS","COUNTRY":"New ealand","STATE":"Gisborne"},{"STATECODE":"HKB","COUNTRY":"New Zealand","STATE":"Hawke’s Bay"},{"STATECODE":"TKI","COUNTRY":"New Zealand","STATE":"Taranaki"},{"STATECODE":"MWT","COUNTRY":"New Zealand","STATE":"Manawatū-Whanganui"},{"STATECODE":"WGN","COUNTRY":"New Zealand","STATE":"Wellington"},{"STATECODE":"TAS","COUNTRY":"New Zealand","STATE":"Tasman"},{"STATECODE":"NSN","COUNTRY":"NewZealand","STATE":"Nelson"},{"STATECODE":"MBH","COUNTRY":"New Zealand","STATE":"Marlborough"},{"STATECODE":"WTC","COUNTRY":"New Zealand","STATE":"West Coast"},{"STATECODE":"CAN","COUNTRY":"New Zealand","STATE":"Canterbury"},{"STATECODE":"OTA","COUNTRY":"New Zealand","STATE":"Otago"},{"STATECODE":"STL","COUNTRY":"New Zealand","STATE":"Southland"}],"Canada":[{"STATECODE":"AB","COUNTRY":"Canada","stateTaxFields":["canada_gst"],"STATETINNO":"48","STATE":"Alberta"},{"STATECODE":"BC","COUNTRY":"Canada","stateTaxFields":["canada_gst","canada_pst"],"STATETINNO":"59","STATE":"British Columbia"},{"STATECODE":"MB","COUNTRY":"Canada","stateTaxFields":["canada_gst","canada_pst"],"STATETINNO":"46","STATE":"Manitoba"},{"STATECODE":"NB","COUNTRY":"Canada","stateTaxFields":["canada_hst"],"STATETINNO":"13","STATE":"New Brunswick"},{"STATECODE":"NL","COUNTRY":"Canada","stateTaxFields":["canada_hst"],"STATETINNO":"10","STATE":"Newfoundland and Labrador"},{"STATECODE":"NT","COUNTRY":"Canada","stateTaxFields":["canada_gst"],"STATETINNO":"61","STATE":"Northwest Territories"},{"STATECODE":"NS","COUNTRY":"Canada","stateTaxFields":["canada_hst"],"STATETINNO":"12","STATE":"Nova Scotia"},{"STATECODE":"NU","COUNTRY":"Canada","stateTaxFields":["canada_gst"],"STATETINNO":"62","STATE":"Nunavut"},{"STATECODE":"ON","COUNTRY":"Canada","stateTaxFields":["canada_hst"],"STATETINNO":"35","STATE":"Ontario"},{"STATECODE":"PE","COUNTRY":"Canada","stateTaxFields":["canada_hst"],"STATETINNO":"11","STATE":"Prince Edward Island"},{"STATECODE":"QC","COUNTRY":"Canada","stateTaxFields":["canada_gst","canada_quebec_qst"],"STATETINNO":"24","STATE":"Quebec"},{"STATECODE":"SK","COUNTRY":"Canada","stateTaxFields":["canada_gst","canada_pst"],"STATETINNO":"47","STATE":"Saskatchewan"},{"STATECODE":"YT","COUNTRY":"Canada","stateTaxFields":["canada_gst"],"STATETINNO":"60","STATE":"Yukon"}],"United States":[{"STATECODE":"AL","COUNTRY":"United States","STATE":"Alabama"},{"STATECODE":"AK","COUNTRY":"United States","STATE":"Alaska"},{"STATECODE":"AZ","COUNTRY":"United States","STATE":"Arizona"},{"STATECODE":"AR","COUNTRY":"United States","STATE":"Arkansas"},{"STATECODE":"CA","COUNTRY":"United States","STATE":"California"},{"STATECODE":"CO","COUNTRY":"United States","STATE":"Colorado","CITIES":["Akron","Alamosa","Allenspark","Antonito","Arboles","Arriba","Arvada","Aspen","Ault","Aurora","Avon","Avondale","Black Hawk","Basalt","Battlement Mesa","Bayfield","Bennett","Berthoud","Bethune","Blanca","Boone","Boulder","Breckenridge","Brighton","Broomfield","Broomfield Arista SP Special","Brush","Buena Vista","Burlington","Byers","Castle Pines North","Centennial","Cherry Hills Village","Calhan","Canon City","Carbondale","Castle Rock","Cedaredge","Center","Central City","Cheraw","Cheyenne Wells","Clifton","Coal Creek","Collbran","Colorado City","Colorado Springs","Commerce City","Cortez","Craig","Crawford","Creede","Crested Butte","Cripple Creek","Dacono","De Beque","Deer Trail","Del Norte","Delta","Denver","Dillon","Dinosaur","Dolores","Dove Creek","Durango","Eads","Eagle","Eaton","Eckley","Edwards","Eldorado Springs","Elizabeth","Empire","Englewood","Erie","Estes Park","Evans","Evergreen","Federal Heights","Flatirons Crossing Mall Local Improvement Special","Fairplay","Firestone","Flagler","Fleming","Florence","Florissant","Fort Collins","Fort Garland","Fort Lupton","Fort Morgan","Fountain","Fowler","Fraser","Frederick","Frisco","Fruita","Genoa","Georgetown","Gilcrest","Glenwood Springs","Golden","Granada","Granby","Grand Junction","Grand Lake","Greeley","Greenwood Village","Green Mountain Falls","Gunnison","Gypsum","Haxtun","Hayden","Hillrose","Holly","Holyoke","Hot Sulphur Springs","Hotchkiss","Hudson","Hugo","Idaho Springs","Ignacio","Iliff","Indian Hills","Jamestown","Johnstown","Julesburg","Keenesburg","Kersey","Kiowa","Keystone","Kit Carson","Kittredge","Kremmling","La Jara","La Junta","La Salle","La Veta","Lafayette","Lake City","Lone Tree","Lakewood","Lamar","Laporte","Larkspur","Las Animas","Leadville","Limon","Littleton","Log Lane Village","Longmont","Louisville","Louviers","Loveland","Lyons","Manassa","Mancos","Montrose","Mount Crested Butte City","Mountain Village","Manitou Springs","Manzanola","Mead","Meeker","Merino","Milliken","Minturn","Monte Vista","Monument","Morrison","Naturita","Nederland","New Castle","Niwot","Norwood","Northglenn","Nucla","Nunn","Oak Creek","Olathe","Olney Springs","Ordway","Otis","Ouray","Ovid","Pagosa Springs","Palisade","Palmer Lake","Paonia","Parachute","Parker","Peetz","Penrose","Pierce","Platteville","Poncha Springs","Pueblo","Rangely","Red Cliff","Red Feather Lakes","Rico","Ridgway","Rifle","Rockvale","Rocky Ford","Romeo","Rye","Saguache","Salida","San Luis","Sanford","Sedalia","Severance","Sheridan","Silt","Silver Plume","Silverthorne","Silverton","Simla","Snowmass Village","South Fork","Springfield","Steamboat Springs","Sterling","Strasburg","Stratton","Sugar City","Swink","Telluride","Thornton","Timnath","Towaoc","Trinidad","Vail","Victor","Walden","Walsenburg","Walsh","Wellington","Westcliffe","Westminster","Wheat Ridge","Wiggins","Wiley","Windsor","Winter Park","Woodland Park","Wray","Yampa","Yuma"]},{"STATECODE":"CT","COUNTRY":"United States","STATE":"Connecticut"},{"STATECODE":"DE","COUNTRY":"United States","STATE":"Delaware"},{"STATECODE":"FL","COUNTRY":"United States","STATE":"Florida"},{"STATECODE":"GA","COUNTRY":"United States","STATE":"Georgia"},{"STATECODE":"HI","COUNTRY":"United States","STATE":"Hawaii"},{"STATECODE":"ID","COUNTRY":"United States","STATE":"Idaho"},{"STATECODE":"IL","COUNTRY":"United States","STATE":"Illinois","CITIES":["Abingdon","Adair","Addieville","Addison","Akin","Albany","Albers","Albion","Aledo","Alexander","Alexis","Algonquin","Alhambra","Allendale","Allerton","Alma","Alpha","Alsey","Alsip","Altamont","Alto pass","Alton","Altona","Alvin","Amboy","Anchor","Ancona","Andalusia","Andover","Anna","Annapolis","Annawan","Antioch","Apple river","Arcola","Arenzville","Argenta","Arlington","Arlington heights","Armington","Armstrong","Aroma park","Arrowsmith","Arthur","Ashkum","Ashland","Ashley","Ashmore","Ashton","Assumption","Astoria","Athens","Atkinson","Atlanta","Atwood","Auburn","Augusta","Aurora","Ava","Aviston","Avon","Baileyville","Baldwin","Bardolph","Barnhill","Barrington","Barry","Barstow","Bartelso","Bartlett","Basco","Batavia","Batchtown","Bath","Baylis","Beardstown","Beason","Beaverville","Beckemeyer","Bedford park","Beecher","Beecher city","Belknap","Belle rive","Belleville","Bellflower","Bellmont","Bellwood","Belvidere","Bement","Benld","Bensenville","Benson","Benton","Berkeley","Berwick","Berwyn","Bethalto","Bethany","Big rock","Biggsville","Bingham","Bishop hill","Bismarck","Blackstone","Blandinsville","Bloomingdale","Bloomington","Blue island","Blue mound","Bluff springs","Bluffs","Bluford","Bolingbrook","Bondville","Bone gap","Bonfield","Bonnie","Boody","Bourbonnais","Bowen","Braceville","Bradford","Bradley","Braidwood","Breese","Bridgeport","Bridgeview","Brighton","Brimfield","Bristol","Broadlands","Broadview","Brocton","Brookfield","Brookport","Broughton","Browning","Browns","Brownstown","Brussels","Bryant","Buckingham","Buckley","Buckner","Buda","Buffalo","Buffalo grove","Buffalo prairie","Bulpitt","Buncombe","Bunker hill","Burbank","Bureau","Burlington","Burnt prairie","Bushnell","Butler","Byron","Cabery","Cairo","Caledonia","Calhoun","Calumet city","Camargo","Cambria","Cambridge","Camden","Cameron","Camp grove","Camp point","Campbell hill","Campus","Canton","Cantrall","Capron","Carbon cliff","Carbondale","Carlinville","Carlock","Carlyle","Carman","Carmi","Carol stream","Carpentersville","Carrier mills","Carrollton","Carterville","Carthage","Cary","Casey","Caseyville","Castleton","Catlin","Cave in rock","Cedar point","Cedarville","Centralia","Cerro gordo","Chadwick","Chambersburg","Champaign","Chana","Chandlerville","Channahon","Chapin","Charleston","Chatham","Chatsworth","Chebanse","Chenoa","Cherry","Cherry valley","Chester","Chesterfield","Chestnut","Chicago","Chicago heights","Chicago ridge","Chillicothe","Chrisman","Christopher","Cicero","Cisco","Cisne","Cissna park","Clare","Claremont","Clarendon hills","Clay city","Clayton","Claytonville","Clifton","Clinton","Coal city","Coal valley","Coatsburg","Cobden","Coello","Coffeen","Colchester","Colfax","Collinsville","Collison","Colona","Colp","Columbia","Colusa","Compton","Concord","Congerville","Cooksville","Cordova","Cornell","Cornland","Cortland","Cottage hills","Coulterville","Country club hills","Cowden","Creal springs","Crescent city","Crest hill","Creston","Crestwood","Crete","Creve coeur","Cropsey","Crossville","Crystal lake","Cuba","Cullom","Cutler","Cypress","Dahinda","Dahlgren","Dakota","Dale","Dallas city","Dalton city","Dalzell","Dana","Danforth","Danvers","Danville","Darien","Davis","Davis junction","Dawson","De land","De soto","Decatur","Deer creek","Deer grove","Deerfield","Dekalb","Delavan","Dennison","Depue","Des plaines","Dewey","Dewitt","Dieterich","Divernon","Dix","Dixon","Dolton","Dongola","Donnellson","Donovan","Dorsey","Dover","Dow","Dowell","Downers grove","Downs","Du bois","Du quoin","Dundas","Dundee","Dunfermline","Dunlap","Dupo","Durand","Dwight","Eagarville","Earlville","East alton","East carondelet","East dubuque","East galesburg","East lynn","East moline","East peoria","East saint louis","Easton","Eddyville","Edelstein","Edgewood","Edinburg","Edwards","Edwardsville","Effingham","El paso","Elburn","Eldena","Eldorado","Eldred","Eleroy","Elgin","Elizabeth","Elizabethtown","Elk grove village","Elkhart","Elkville","Ellery","Elliott","Ellis grove","Ellisville","Ellsworth","Elmhurst","Elmwood","Elmwood park","Elsah","Elvaston","Elwin","Elwood","Emden","Emington","Emma","Energy","Enfield","Eola","Equality","Erie","Esmond","Essex","Eureka","Evanston","Evansville","Evergreen park","Ewing","Fairbury","Fairfield","Fairmount","Fairview","Fairview heights","Farina","Farmer city","Farmersville","Farmington","Fenton","Ferris","Fiatt","Fidelity","Fieldon","Fillmore","Findlay","Fisher","Fithian","Flanagan","Flat rock","Flora","Flossmoor","Foosland","Forest city","Forest park","Forrest","Forreston","Forsyth","Fowler","Fox lake","Fox river grove","Fox valley","Frankfort","Franklin","Franklin grove","Franklin park","Frederick","Freeburg","Freeman spur","Freeport","Ft sheridan","Fulton","Fults","Galatia","Galena","Galesburg","Galt","Galva","Garden prairie","Gardner","Gays","Geff","Geneseo","Geneva","Genoa","Georgetown","Gerlaw","German valley","Germantown","Gibson city","Gifford","Gilberts","Gillespie","Gilman","Gilson","Girard","Gladstone","Glasford","Glen carbon","Glen ellyn","Glenarm","Glencoe","Glendale heights","Glenview","Glenwood","Godfrey","Golconda","Golden","Golden eagle","Golden gate","Golf","Good hope","Goodfield","Goodwine","Goreville","Gorham","Grafton","Grand chain","Grand ridge","Grand tower","Granite city","Grant park","Grantsburg","Granville","Graymont","Grayslake","Grayville","Great lakes","Green valley","Greenfield","Greenup","Greenview","Greenville","Gridley","Griggsville","Groveland","Gurnee","Hamburg","Hamel","Hamilton","Hammond","Hampshire","Hampton","Hanna city","Hanover","Hanover park","Hardin","Harmon","Harrisburg","Harristown","Hartford","Hartsburg","Harvard","Harvel","Harvey","Harwood heights","Havana","Hazel crest","Hebron","Hecker","Henderson","Hennepin","Henning","Henry","Herod","Herrick","Herrin","Herscher","Hettick","Heyworth","Hickory hills","Hidalgo","Highland","Highland park","Highwood","Hillsboro","Hillsdale","Hillside","Hillview","Hinckley","Hindsboro","Hines","Hinsdale","Hoffman","Hoffman estates","Holcomb","Homer","Homer glen","Hometown","Homewood","Hoopeston","Hooppole","Hopedale","Hopkins park","Hoyleton","Hudson","Huey","Hull","Humboldt","Hume","Huntley","Huntsville","Hurst","Hutsonville","Illinois city","Illiopolis","Ina","Indianola","Industry","Ingleside","Ingraham","Ipava","Iroquois","Irving","Irvington","Island lake","Itasca","Iuka","Ivesdale","Jacksonville","Jacob","Janesville","Jerseyville","Jewett","Johnsonville","Johnston city","Joliet","Jonesboro","Joppa","Joy","Junction","Justice","Kampsville","Kane","Kaneville","Kankakee","Kansas","Karbers ridge","Karnak","Kasbeer","Keenes","Keensburg","Keithsburg","Kell","Kempton","Kenilworth","Kenney","Kent","Kewanee","Keyesport","Kilbourne","Kincaid","Kinderhook","Kingston","Kingston mines","Kinmundy","Kinsman","Kirkland","Kirkwood","Knoxville","La fayette","La grange","La grange park","La harpe","La moille","La place","La prairie","La rose","La salle","Lacon","Ladd","Lafox","Lake bluff","Lake forest","Lake fork","Lake in the hills","Lake villa","Lake zurich","Lakewood","Lanark","Lane","Lansing","Latham","Laura","Lawndale","Lawrenceville","Le roy","Leaf river","Lebanon","Lee","Lee center","Leland","Lemont","Lena","Lenzburg","Leonore","Lerna","Lewistown","Lexington","Liberty","Libertyville","Lima","Lincoln","Lincolns new salem","Lincolnshire","Lincolnwood","Lindenwood","Lisle","Litchfield","Literberry","Little york","Littleton","Liverpool","Livingston","Loami","Lockport","Loda","Logan","Lomax","Lombard","London mills","Long point","Longview","Loogootee","Loraine","Lostant","Louisville","Lovejoy","Loves park","Lovington","Lowpoint","Ludlow","Lyndon","Lynn center","Lyons","Macedonia","Machesney park","Mackinaw","Macomb","Macon","Madison","Maeystown","Magnolia","Mahomet","Makanda","Malden","Malta","Manchester","Manhattan","Manito","Manlius","Mansfield","Manteno","Maple park","Mapleton","Maquon","Marengo","Marietta","Marine","Marion","Marissa","Mark","Markham","Maroa","Marseilles","Marshall","Martinsville","Martinton","Maryville","Mascoutah","Mason","Mason city","Matherville","Matteson","Mattoon","Maunie","Maywood","Mazon","Mc connell","Mc lean","Mc leansboro","Mc nabb","Mchenry","Mechanicsburg","Media","Medinah","Medora","Melrose park","Melvin","Menard","Mendon","Mendota","Meredosia","Merna","Metamora","Metcalf","Metropolis","Michael","Middletown","Midlothian","Milan","Milford","Mill shoals","Millbrook","Milledgeville","Miller city","Millington","Millstadt","Milmine","Milton","Mineral","Minier","Minonk","Minooka","Mode","Modesto","Modoc","Mokena","Moline","Momence","Monee","Monmouth","Monroe center","Montgomery","Monticello","Montrose","Mooseheart","Moro","Morris","Morrison","Morrisonville","Morton","Morton grove","Mossville","Mound city","Mounds","Mount auburn","Mount carmel","Mount carroll","Mount erie","Mount morris","Mount olive","Mount prospect","Mount pulaski","Mount sterling","Mount vernon","Mount zion","Moweaqua","Mozier","Muddy","Mulberry grove","Mulkeytown","Muncie","Mundelein","Murdock","Murphysboro","Murrayville","Nachusa","Naperville","Nashville","Nason","National stock yards","Nauvoo","Nebo","Neoga","Neponset","New athens","New baden","New bedford","New berlin","New boston","New burnside","New canton","New douglas","New haven","New holland","New lenox","New memphis","New salem","New windsor","Newark","Newman","Newton","Niantic","Niles","Nilwood","Niota","Noble","Nokomis","Nora","Normal","Norris","Norris city","North aurora","North chicago","North henderson","Northbrook","O fallon","Oak brook","Oak forest","Oak lawn","Oak park","Oakdale","Oakford","Oakland","Oakwood","Oblong","Oconee","Odell","Odin","Ogden","Oglesby","Ohio","Ohlman","Okawville","Olive branch","Olmsted","Olney","Olympia fields","Omaha","Onarga","Oneida","Opdyke","Ophiem","Oquawka","Orangeville","Oraville","Oreana","Oregon","Orient","Orion","Orland park","Osco","Oswego","Ottawa","Owaneco","Ozark","Palatine","Palestine","Palmer","Palmyra","Paloma","Palos heights","Palos hills","Palos park","Pana","Panama","Papineau","Paris","Park forest","Park ridge","Parkersburg","Patoka","Patterson","Paw paw","Pawnee","Paxton","Payson","Pearl","Pearl city","Pecatonica","Pekin","Pembroke township","Penfield","Peoria","Peoria heights","Peotone","Percy","Perks","Perry","Peru","Pesotum","Petersburg","Philo","Piasa","Pierron","Pinckneyville","Piper city","Pittsburg","Pittsfield","Plainfield","Plainville","Plano","Plato center","Pleasant hill","Pleasant plains","Plymouth","Pocahontas","Polo","Pomona","Pontiac","Poplar grove","Port byron","Posen","Potomac","Prairie city","Prairie du rocher","Preemption","Princeton","Princeville","Prophetstown","Prospect heights","Pulaski","Putnam","Quincy","Radom","Raleigh","Ramsey","Rankin","Ransom","Rantoul","Rapids city","Raritan","Raymond","Red bud","Reddick","Redmon","Renault","Reynolds","Richmond","Richton park","Richview","Ridge farm","Ridgway","Ridott","Rinard","Ringwood","Rio","River forest","River grove","Riverdale","Riverside","Riverton","Roanoke","Robbins","Roberts","Robinson","Rochelle","Rochester","Rock city","Rock falls","Rock island","Rockbridge","Rockford","Rockport","Rockton","Rockwood","Rolling meadows","Rome","Romeoville","Roodhouse","Rosamond","Roscoe","Roselle","Roseville","Rosiclare","Rossville","Round lake","Roxana","Royal","Royalton","Rushville","Russell","Rutland","Sadorus","Sailor springs","Sainte marie","Salem","San jose","Sandoval","Sandwich","Saunemin","Savanna","Savoy","Sawyerville","Saybrook","Scales mound","Schaumburg","Scheller","Schiller park","Sciota","Scott air force base","Scottville","Seaton","Seatonville","Secor","Seneca","Serena","Sesser","Seward","Seymour","Shabbona","Shannon","Shawneetown","Sheffield","Shelbyville","Sheldon","Sheridan","Sherman","Sherrard","Shipman","Shirland","Shirley","Shobonier","Shorewood","Shumway","Sibley","Sidell","Sidney","Sigel","Silvis","Simpson","Sims","Skokie","Smithboro","Smithfield","Smithshire","Smithton","Somonauk","Sorento","South beloit","South elgin","South holland","South pekin","South roxana","South wilmington","Sparland","Sparta","Speer","Spring grove","Spring valley","Springerton","Springfield","St anne","St augustine","St charles","St david","St elmo","St francisville","St jacob","St joseph","St libory","St peter","Standard","Stanford","Staunton","Steeleville","Steger","Sterling","Steward","Stewardson","Stillman valley","Stockland","Stockton","Stone park","Stonefort","Stonington","Stoy","Strasburg","Strawn","Streamwood","Streator","Stronghurst","Sublette","Sugar grove","Sullivan","Summerfield","Summit argo","Sumner","Sutter","Sycamore","Table grove","Tallula","Tamaroa","Tamms","Tampico","Taylor ridge","Taylor springs","Taylorville","Techny","Tennessee","Teutopolis","Texico","Thawville","Thayer","Thebes","Thomasboro","Thompsonville","Thomson","Thornton","Tilden","Tilton","Timewell","Tinley park","Tiskilwa","Toledo","Tolono","Toluca","Tonica","Topeka","Toulon","Tovey","Towanda","Tower hill","Tremont","Trenton","Trilla","Triumph","Trivoli","Troy","Troy grove","Tuscola","Ullin","Union","Union hill","University park","Urbana","Ursa","Utica","Valier","Valmeyer","Van orin","Vandalia","Varna","Venice","Vergennes","Vermilion","Vermont","Vernon","Vernon hills","Verona","Versailles","Victoria","Vienna","Villa grove","Villa park","Villa ridge","Viola","Virden","Virgil","Virginia","Wadsworth","Waggoner","Walnut","Walnut hill","Walsh","Walshville","Waltonville","Wapella","Warren","Warrensburg","Warrenville","Warsaw","Wasco","Washburn","Washington","Wataga","Waterloo","Waterman","Watseka","Watson","Wauconda","Waukegan","Waverly","Wayne","Wayne city","Waynesville","Wedron","Weldon","Wellington","Wenona","West brooklyn","West chicago","West frankfort","West liberty","West point","West salem","West union","West york","Westchester","Western springs","Westfield","Westmont","Westville","Wheaton","Wheeler","Wheeling","White hall","White heath","Whittington","Williamsfield","Williamsville","Willisville","Willow hill","Willow springs","Willowbrook","Wilmette","Wilmington","Wilsonville","Winchester","Windsor","Winfield","Winnebago","Winnetka","Winslow","Winthrop harbor","Witt","Wolf lake","Wonder lake","Wood dale","Wood river","Woodhull","Woodland","Woodlawn","Woodridge","Woodson","Woodstock","Woosung","Worden","Worth","Wrights","Wyanet","Wyoming","Xenia","Yale","Yates city","Yorkville","Zeigler","Zion"]},{"STATECODE":"IN","COUNTRY":"United States","STATE":"Indiana"},{"STATECODE":"IA","COUNTRY":"United States","STATE":"Iowa"},{"STATECODE":"KS","COUNTRY":"United States","STATE":"Kansas"},{"STATECODE":"KY","COUNTRY":"United States","STATE":"Kentucky"},{"STATECODE":"LA","COUNTRY":"United States","STATE":"Louisiana"},{"STATECODE":"ME","COUNTRY":"United States","STATE":"Maine"},{"STATECODE":"MD","COUNTRY":"United States","STATE":"Maryland"},{"STATECODE":"MA","COUNTRY":"United States","STATE":"Massachusetts"},{"STATECODE":"MI","COUNTRY":"United States","STATE":"Michigan"},{"STATECODE":"MN","COUNTRY":"United States","STATE":"Minnesota"},{"STATECODE":"MS","COUNTRY":"United States","STATE":"Mississippi"},{"STATECODE":"MO","COUNTRY":"United States","STATE":"Missouri"},{"STATECODE":"MT","COUNTRY":"United States","STATE":"Montana"},{"STATECODE":"NE","COUNTRY":"United States","STATE":"Nebraska"},{"STATECODE":"NV","COUNTRY":"United States","STATE":"Nevada"},{"STATECODE":"NH","COUNTRY":"United States","STATE":"New Hampshire"},{"STATECODE":"NJ","COUNTRY":"United States","STATE":"New Jersey"},{"STATECODE":"NM","COUNTRY":"United States","STATE":"New Mexico"},{"STATECODE":"NY","COUNTRY":"United States","STATE":"New York"},{"STATECODE":"NC","COUNTRY":"United States","STATE":"North Carolina"},{"STATECODE":"ND","COUNTRY":"United States","STATE":"North Dakota"},{"STATECODE":"OH","COUNTRY":"United States","STATE":"Ohio"},{"STATECODE":"OK","COUNTRY":"United States","STATE":"Oklahoma"},{"STATECODE":"OR","COUNTRY":"United States","STATE":"Oregon"},{"STATECODE":"PA","COUNTRY":"United States","STATE":"Pennsylvania"},{"STATECODE":"RI","COUNTRY":"United States","STATE":"Rhode Island"},{"STATECODE":"SC","COUNTRY":"United States","STATE":"South Carolina"},{"STATECODE":"SD","COUNTRY":"United States","STATE":"South Dakota"},{"STATECODE":"TN","COUNTRY":"United States","STATE":"Tennessee"},{"STATECODE":"TX","COUNTRY":"United States","STATE":"Texas"},{"STATECODE":"UT","COUNTRY":"United States","STATE":"Utah"},{"STATECODE":"VT","COUNTRY":"United States","STATE":"Vermont"},{"STATECODE":"VA","COUNTRY":"United States","STATE":"Virginia"},{"STATECODE":"WA","COUNTRY":"United States","STATE":"Washington"},{"STATECODE":"DC","COUNTRY":"United States","STATE":"Washington DC"},{"STATECODE":"WV","COUNTRY":"United States","STATE":"West Virginia"},{"STATECODE":"WI","COUNTRY":"United States","STATE":"Wisconsin"},{"STATECODE":"WY","COUNTRY":"United States","STATE":"Wyoming"}],"Japan":[{"STATECODE":"HK","COUNTRY":"Japan","STATEVALUE":"Hokkaido","STATE":"北海道"},{"STATECODE":"AP","COUNTRY":"Japan","STATEVALUE":"Aomori Prefecture","STATE":"青森県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Iwate Prefecture","STATE":"岩手県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Miyagi Prefecture","STATE":"宮城県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Akita","STATE":"秋田県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Yamagata Prefecture","STATE":"山形県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Fukushima Prefecture","STATE":"福島県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Ibaraki Prefecture","STATE":"茨城県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Tochigi Prefecture","STATE":"栃木県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Gunma Prefecture","STATE":"群馬県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Saitama","STATE":"埼玉県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Chiba Prefecture","STATE":"千葉県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Tokyo","STATE":"東京都"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Kanagawa Prefecture","STATE":"神奈川県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Niigata Prefecture","STATE":"新潟県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Toyama Prefecture","STATE":"富山県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Ishikawa Prefecture","STATE":"石川県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Fukui Prefecture","STATE":"福井県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Yamanashi Prefecture","STATE":"山梨県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Nagano Prefecture","STATE":"長野県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Gifu Prefecture","STATE":"岐阜県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Shizuoka Prefecture","STATE":"静岡県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Aichi prefecture","STATE":"愛知県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Mie Prefecture","STATE":"三重県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Shiga Prefecture","STATE":"滋賀県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Kyoto","STATE":"京都府"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Osaka Prefecture","STATE":"大阪府"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Hyogo Prefecture","STATE":"兵庫県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Nara Prefecture","STATE":"奈良県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Wakayama Prefecture","STATE":"和歌山県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Tottori Prefecture","STATE":"鳥取県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Shimane Prefecture","STATE":"島根県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Okayama Prefecture","STATE":"岡山県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Hiroshima","STATE":"広島県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Yamaguchi Prefecture","STATE":"山口県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Tokushima Prefecture","STATE":"徳島県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Kagawa Prefecture","STATE":"香川県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Ehime Prefecture","STATE":"愛媛県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Kochi Prefecture","STATE":"高知県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Fukuoka Prefecture","STATE":"福岡県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Saga Prefecture","STATE":"佐賀県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Nagasaki Prefecture","STATE":"長崎県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Kumamoto Prefecture","STATE":"熊本県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Oita Prefecture","STATE":"大分県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Miyazaki Prefecture","STATE":"宮崎県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Kagoshima prefecture","STATE":"鹿児島県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Okinawa Prefecture","STATE":"沖縄県"}],"Brazil":[{"COUNTRY":"Brazil","STATECODE":"AC","STATE":"Acre"},{"COUNTRY":"Brazil","STATECODE":"AL","STATE":"Alagoas"},{"COUNTRY":"Brazil","STATECODE":"AM","STATE":"Amazonas"},{"COUNTRY":"Brazil","STATECODE":"AP","STATE":"Amapá"},{"COUNTRY":"Brazil","STATECODE":"BA","STATE":"Bahia"},{"COUNTRY":"Brazil","STATECODE":"CE","STATE":"Ceará"},{"COUNTRY":"Brazil","STATECODE":"DF","STATE":"Distrito Federal"},{"COUNTRY":"Brazil","STATECODE":"ES","STATE":"Espírito Santo"},{"COUNTRY":"Brazil","STATECODE":"GO","STATE":"Goiás"},{"COUNTRY":"Brazil","STATECODE":"MA","STATE":"Maranhão"},{"COUNTRY":"Brazil","STATECODE":"MG","STATE":"Minas Gerais"},{"COUNTRY":"Brazil","STATECODE":"MS","STATE":"Mato Grosso do Sul"},{"COUNTRY":"Brazil","STATECODE":"MT","STATE":"Mato Grosso"},{"COUNTRY":"Brazil","STATECODE":"PA","STATE":"Pará"},{"COUNTRY":"Brazil","STATECODE":"PB","STATE":"Paraíba"},{"COUNTRY":"Brazil","STATECODE":"PE","STATE":"Pernambuco"},{"COUNTRY":"Brazil","STATECODE":"PI","STATE":"Piauí"},{"COUNTRY":"Brazil","STATECODE":"PR","STATE":"Paraná"},{"COUNTRY":"Brazil","STATECODE":"RJ","STATE":"Rio de Janeiro"},{"COUNTRY":"Brazil","STATECODE":"RN","STATE":"Rio Grande do Norte"},{"COUNTRY":"Brazil","STATECODE":"RO","STATE":"Rondônia"},{"COUNTRY":"Brazil","STATECODE":"RR","STATE":"Roraima"},{"COUNTRY":"Brazil","STATECODE":"RS","STATE":"Rio Grande do Sul"},{"COUNTRY":"Brazil","STATECODE":"SC","STATE":"Santa Catarina"},{"COUNTRY":"Brazil","STATECODE":"SE","STATE":"Sergipe"},{"COUNTRY":"Brazil","STATECODE":"SP","STATE":"São Paulo"},{"COUNTRY":"Brazil","STATECODE":"TO","STATE":"Tocantins"}],"Malaysia":[{"STATECODE":"JHR","COUNTRY":"Malaysia","STATE":"Johor"},{"STATECODE":"KDH","COUNTRY":"Malaysia","STATE":"Kedah"},{"STATECODE":"KTN","COUNTRY":"Malaysia","STATE":"Kelantan"},{"STATECODE":"MLK","COUNTRY":"Malaysia","STATE":"Melaka"},{"STATECODE":"NSN","COUNTRY":"Malaysia","STATE":"Negeri Sembilan"},{"STATECODE":"PHG","COUNTRY":"Malaysia","STATE":"Pahang"},{"STATECODE":"PNG","COUNTRY":"Malaysia","STATE":"Pulau Pinang"},{"STATECODE":"PRK","COUNTRY":"Malaysia","STATE":"Perak"},{"STATECODE":"PLS","COUNTRY":"Malaysia","STATE":"Perlis"},{"STATECODE":"SGR","COUNTRY":"Malaysia","STATE":"Selangor"},{"STATECODE":"TRG","COUNTRY":"Malaysia","STATE":"Terengganu"},{"STATECODE":"SBH","COUNTRY":"Malaysia","STATE":"Sabah"},{"STATECODE":"SWK","COUNTRY":"Malaysia","STATE":"Sarawak"},{"STATECODE":"WPKL","COUNTRY":"Malaysia","STATE":"Wilayah Persekutuan Kuala Lumpur"},{"STATECODE":"WPLB","COUNTRY":"Malaysia","STATE":"Wilayah Persekutuan Labuan"},{"STATECODE":"WPPJ","COUNTRY":"Malaysia","STATE":"Wilayah Persekutuan Putrajaya"}],"United Arab Emirates":[{"COUNTRY":"United Arab Emirates","STATECODE":"AJ","STATE":"Ajman"},{"COUNTRY":"United Arab Emirates","STATECODE":"AB","STATE":"Abu Dhabi"},{"COUNTRY":"United Arab Emirates","STATECODE":"DU","STATE":"Dubai"},{"COUNTRY":"United Arab Emirates","STATECODE":"FU","STATE":"Fujairah"},{"COUNTRY":"United Arab Emirates","STATECODE":"RA","STATE":"Ras al-Khaimah"},{"COUNTRY":"United Arab Emirates","STATECODE":"SH","STATE":"Sharjah"},{"COUNTRY":"United Arab Emirates","STATECODE":"UM","STATE":"Umm al-Quwain"}],"Australia":[{"STATECODE":"NSW","COUNTRY":"Australia","STATE":"New South Wales"},{"STATECODE":"VIC","COUNTRY":"Australia","STATE":"Victoria"},{"STATECODE":"QLD","COUNTRY":"Australia","STATE":"Queensland"},{"STATECODE":"WA","COUNTRY":"Australia","STATE":"Western Australia"},{"STATECODE":"SA","COUNTRY":"Australia","STATE":"South Australia"},{"STATECODE":"TAS","COUNTRY":"Australia","STATE":"Tasmania"},{"STATECODE":"ACT","COUNTRY":"Australia","STATE":"Australian Capital Territory"},{"STATECODE":"NT","COUNTRY":"Australia","STATE":"Northern Territory"}],"India":[{"STATECODE":"AP","COUNTRY":"India","STATETINNO":"37","STATE":"Andhra Pradesh"},{"STATECODE":"AR","COUNTRY":"India","STATETINNO":"12","STATE":"Arunachal Pradesh"},{"STATECODE":"AS","COUNTRY":"India","STATETINNO":"18","STATE":"Assam"},{"STATECODE":"BR","COUNTRY":"India","STATETINNO":"10","STATE":"Bihar"},{"STATECODE":"CT","COUNTRY":"India","STATETINNO":"22","STATE":"Chhattisgarh"},{"STATECODE":"DL","COUNTRY":"India","STATETINNO":"07","STATE":"Delhi"},{"STATECODE":"GA","COUNTRY":"India","STATETINNO":"30","STATE":"Goa"},{"STATECODE":"GJ","COUNTRY":"India","STATETINNO":"24","STATE":"Gujarat"},{"STATECODE":"HR","COUNTRY":"India","STATETINNO":"06","STATE":"Haryana"},{"STATECODE":"HP","COUNTRY":"India","STATETINNO":"02","STATE":"Himachal Pradesh"},{"STATECODE":"JK","COUNTRY":"India","STATETINNO":"01","STATE":"Jammu and Kashmir"},{"STATECODE":"JH","COUNTRY":"India","STATETINNO":"20","STATE":"Jharkhand"},{"STATECODE":"KA","COUNTRY":"India","STATETINNO":"29","STATE":"Karnataka"},{"STATECODE":"KL","COUNTRY":"India","STATETINNO":"32","STATE":"Kerala"},{"STATECODE":"MP","COUNTRY":"India","STATETINNO":"23","STATE":"Madhya Pradesh"},{"STATECODE":"MH","COUNTRY":"India","STATETINNO":"27","STATE":"Maharashtra"},{"STATECODE":"MN","COUNTRY":"India","STATETINNO":"14","STATE":"Manipur"},{"STATECODE":"ML","COUNTRY":"India","STATETINNO":"17","STATE":"Meghalaya"},{"STATECODE":"MZ","COUNTRY":"India","STATETINNO":"15","STATE":"Mizoram"},{"STATECODE":"NL","COUNTRY":"India","STATETINNO":"13","STATE":"Nagaland"},{"STATECODE":"OR","COUNTRY":"India","STATETINNO":"21","STATE":"Odisha"},{"STATECODE":"PB","COUNTRY":"India","STATETINNO":"03","STATE":"Punjab"},{"STATECODE":"RJ","COUNTRY":"India","STATETINNO":"08","STATE":"Rajasthan"},{"STATECODE":"SK","COUNTRY":"India","STATETINNO":"11","STATE":"Sikkim"},{"STATECODE":"TN","COUNTRY":"India","STATETINNO":"33","STATE":"Tamil Nadu"},{"STATECODE":"TG","COUNTRY":"India","STATETINNO":"36","STATE":"Telangana"},{"STATECODE":"TR","COUNTRY":"India","STATETINNO":"16","STATE":"Tripura"},{"STATECODE":"UT","COUNTRY":"India","STATETINNO":"05","STATE":"Uttarakhand"},{"STATECODE":"UP","COUNTRY":"India","STATETINNO":"09","STATE":"Uttar Pradesh"},{"STATECODE":"WB","COUNTRY":"India","STATETINNO":"19","STATE":"West Bengal"},{"STATECODE":"AN","COUNTRY":"India","STATETINNO":"35","STATE":"Andaman and Nicobar Islands"},{"STATECODE":"CH","COUNTRY":"India","STATETINNO":"04","STATE":"Chandigarh"},{"STATECODE":"DN","COUNTRY":"India","STATETINNO":"26","STATE":"Dadra and Nagar Haveli and Daman and Diu"},{"STATECODE":"LD","COUNTRY":"India","STATETINNO":"31","STATE":"Lakshadweep"},{"STATECODE":"PY","COUNTRY":"India","STATETINNO":"34","STATE":"Puducherry"},{"STATECODE":"LA","COUNTRY":"India","STATETINNO":"38","STATE":"Ladakh"}]};
+$(".za-state-container").html('');
+var text = constrcutStateOptions(country, stateJson);
+$(".za-state-container").html(text);
+setCountryCode("",country);
+$('#email').on('change', function() {
+$('#zs_end_email').val('');
+var emailId = $('#email').val();
+$.ajax({
+url: "/api/internal/domaintype?email="+encodeURIComponent(emailId),//NO I18N
+type: "GET",//NO I18N
+dataType: "json",	//NO I18N
+contentType: 'application/json; charset=utf-8', // NO I18N
+success: function(data) {
+if(data.type && (data.type == 13 || data.type == 23)){
+$('#za_end_email').show();
+} else {
+$('#zs_end_email').val('');
+$('#za_end_email').hide();
+}
+}
+});
+});
+//$("#signup-termservice").click(function(){
+$("body").on('click','#signup-termservice, .sign_agree', function(){
+var showpasswordicon = $("#signup-termservice");
+if($('#za_end_email').is(":visible")){
+var endEmail = $("#zs_end_email").val();
+var emailId = $('#email').val();
+if(endEmail && endEmail != ''){
+if(endEmail == emailId){
+$('.submitSignUp').addClass('diableBtnSignup');//No i18N
+$('.end_field_msg_sameemail').show();
+} else {
+$('.submitSignUp').removeClass('diableBtnSignup');//No i18N
+$('.end_field_msg').hide();
+$('.end_field_msg_sameemail').hide();
+} 	
+} else {	
+$('.end_field_msg').show();
+$('.submitSignUp').addClass('diableBtnSignup');//No i18N
+}
+}
+});
+$("#zs_end_email").on('change', function(){
+var endEmail = $("#zs_end_email").val();
+var emailId = $('#email').val();
+if(endEmail && endEmail != ''){
+if(endEmail == emailId){
+$('.submitSignUp').addClass('diableBtnSignup');//No i18N
+$('.end_field_msg_sameemail').show();
+} else {
+$.ajax({
+url: "/api/internal/domaintype?email="+encodeURIComponent(endEmail),//NO I18N
+type: "GET",//NO I18N
+dataType: "json",	//NO I18N
+contentType: 'application/json; charset=utf-8', // NO I18N
+success: function(data) {
+if(data.type && (data.type == 13 || data.type == 23)){
+$('.end_field_msg_samedomain').show();
+$('.submitSignUp').addClass('diableBtnSignup');//No i18N
+} else {
+$('.end_field_msg_samedomain').hide();
+$('.submitSignUp').removeClass('diableBtnSignup');//No i18N
+}
+}
+});
+$('.submitSignUp').removeClass('diableBtnSignup');//No i18N
+$('.end_field_msg').hide();
+$('.end_field_msg_sameemail').hide();
+}
+}
+});
+$('select#country').on('change', function() {
+$("#signupplan").html('');
+var business=$("#businessPlan").val();
+var individual=$("#individualPlan").val();
+var countryName = $("#country").val();
+var stateJson = {"New Zealand":[{"STATECODE":"NL","COUNTRY":"New Zealand","STATE":"Northland"},{"STATECODE":"AUK","COUNTRY":"New Zealand","STATE":"Auckland"},{"STATECODE":"WKO","COUNTRY":"New Zealand","STATE":"Waikato"},{"STATECODE":"BOP","COUNTRY":"New Zealand","STATE":"Bay of Plenty"},{"STATECODE":"GIS","COUNTRY":"New ealand","STATE":"Gisborne"},{"STATECODE":"HKB","COUNTRY":"New Zealand","STATE":"Hawke’s Bay"},{"STATECODE":"TKI","COUNTRY":"New Zealand","STATE":"Taranaki"},{"STATECODE":"MWT","COUNTRY":"New Zealand","STATE":"Manawatū-Whanganui"},{"STATECODE":"WGN","COUNTRY":"New Zealand","STATE":"Wellington"},{"STATECODE":"TAS","COUNTRY":"New Zealand","STATE":"Tasman"},{"STATECODE":"NSN","COUNTRY":"NewZealand","STATE":"Nelson"},{"STATECODE":"MBH","COUNTRY":"New Zealand","STATE":"Marlborough"},{"STATECODE":"WTC","COUNTRY":"New Zealand","STATE":"West Coast"},{"STATECODE":"CAN","COUNTRY":"New Zealand","STATE":"Canterbury"},{"STATECODE":"OTA","COUNTRY":"New Zealand","STATE":"Otago"},{"STATECODE":"STL","COUNTRY":"New Zealand","STATE":"Southland"}],"Canada":[{"STATECODE":"AB","COUNTRY":"Canada","stateTaxFields":["canada_gst"],"STATETINNO":"48","STATE":"Alberta"},{"STATECODE":"BC","COUNTRY":"Canada","stateTaxFields":["canada_gst","canada_pst"],"STATETINNO":"59","STATE":"British Columbia"},{"STATECODE":"MB","COUNTRY":"Canada","stateTaxFields":["canada_gst","canada_pst"],"STATETINNO":"46","STATE":"Manitoba"},{"STATECODE":"NB","COUNTRY":"Canada","stateTaxFields":["canada_hst"],"STATETINNO":"13","STATE":"New Brunswick"},{"STATECODE":"NL","COUNTRY":"Canada","stateTaxFields":["canada_hst"],"STATETINNO":"10","STATE":"Newfoundland and Labrador"},{"STATECODE":"NT","COUNTRY":"Canada","stateTaxFields":["canada_gst"],"STATETINNO":"61","STATE":"Northwest Territories"},{"STATECODE":"NS","COUNTRY":"Canada","stateTaxFields":["canada_hst"],"STATETINNO":"12","STATE":"Nova Scotia"},{"STATECODE":"NU","COUNTRY":"Canada","stateTaxFields":["canada_gst"],"STATETINNO":"62","STATE":"Nunavut"},{"STATECODE":"ON","COUNTRY":"Canada","stateTaxFields":["canada_hst"],"STATETINNO":"35","STATE":"Ontario"},{"STATECODE":"PE","COUNTRY":"Canada","stateTaxFields":["canada_hst"],"STATETINNO":"11","STATE":"Prince Edward Island"},{"STATECODE":"QC","COUNTRY":"Canada","stateTaxFields":["canada_gst","canada_quebec_qst"],"STATETINNO":"24","STATE":"Quebec"},{"STATECODE":"SK","COUNTRY":"Canada","stateTaxFields":["canada_gst","canada_pst"],"STATETINNO":"47","STATE":"Saskatchewan"},{"STATECODE":"YT","COUNTRY":"Canada","stateTaxFields":["canada_gst"],"STATETINNO":"60","STATE":"Yukon"}],"United States":[{"STATECODE":"AL","COUNTRY":"United States","STATE":"Alabama"},{"STATECODE":"AK","COUNTRY":"United States","STATE":"Alaska"},{"STATECODE":"AZ","COUNTRY":"United States","STATE":"Arizona"},{"STATECODE":"AR","COUNTRY":"United States","STATE":"Arkansas"},{"STATECODE":"CA","COUNTRY":"United States","STATE":"California"},{"STATECODE":"CO","COUNTRY":"United States","STATE":"Colorado","CITIES":["Akron","Alamosa","Allenspark","Antonito","Arboles","Arriba","Arvada","Aspen","Ault","Aurora","Avon","Avondale","Black Hawk","Basalt","Battlement Mesa","Bayfield","Bennett","Berthoud","Bethune","Blanca","Boone","Boulder","Breckenridge","Brighton","Broomfield","Broomfield Arista SP Special","Brush","Buena Vista","Burlington","Byers","Castle Pines North","Centennial","Cherry Hills Village","Calhan","Canon City","Carbondale","Castle Rock","Cedaredge","Center","Central City","Cheraw","Cheyenne Wells","Clifton","Coal Creek","Collbran","Colorado City","Colorado Springs","Commerce City","Cortez","Craig","Crawford","Creede","Crested Butte","Cripple Creek","Dacono","De Beque","Deer Trail","Del Norte","Delta","Denver","Dillon","Dinosaur","Dolores","Dove Creek","Durango","Eads","Eagle","Eaton","Eckley","Edwards","Eldorado Springs","Elizabeth","Empire","Englewood","Erie","Estes Park","Evans","Evergreen","Federal Heights","Flatirons Crossing Mall Local Improvement Special","Fairplay","Firestone","Flagler","Fleming","Florence","Florissant","Fort Collins","Fort Garland","Fort Lupton","Fort Morgan","Fountain","Fowler","Fraser","Frederick","Frisco","Fruita","Genoa","Georgetown","Gilcrest","Glenwood Springs","Golden","Granada","Granby","Grand Junction","Grand Lake","Greeley","Greenwood Village","Green Mountain Falls","Gunnison","Gypsum","Haxtun","Hayden","Hillrose","Holly","Holyoke","Hot Sulphur Springs","Hotchkiss","Hudson","Hugo","Idaho Springs","Ignacio","Iliff","Indian Hills","Jamestown","Johnstown","Julesburg","Keenesburg","Kersey","Kiowa","Keystone","Kit Carson","Kittredge","Kremmling","La Jara","La Junta","La Salle","La Veta","Lafayette","Lake City","Lone Tree","Lakewood","Lamar","Laporte","Larkspur","Las Animas","Leadville","Limon","Littleton","Log Lane Village","Longmont","Louisville","Louviers","Loveland","Lyons","Manassa","Mancos","Montrose","Mount Crested Butte City","Mountain Village","Manitou Springs","Manzanola","Mead","Meeker","Merino","Milliken","Minturn","Monte Vista","Monument","Morrison","Naturita","Nederland","New Castle","Niwot","Norwood","Northglenn","Nucla","Nunn","Oak Creek","Olathe","Olney Springs","Ordway","Otis","Ouray","Ovid","Pagosa Springs","Palisade","Palmer Lake","Paonia","Parachute","Parker","Peetz","Penrose","Pierce","Platteville","Poncha Springs","Pueblo","Rangely","Red Cliff","Red Feather Lakes","Rico","Ridgway","Rifle","Rockvale","Rocky Ford","Romeo","Rye","Saguache","Salida","San Luis","Sanford","Sedalia","Severance","Sheridan","Silt","Silver Plume","Silverthorne","Silverton","Simla","Snowmass Village","South Fork","Springfield","Steamboat Springs","Sterling","Strasburg","Stratton","Sugar City","Swink","Telluride","Thornton","Timnath","Towaoc","Trinidad","Vail","Victor","Walden","Walsenburg","Walsh","Wellington","Westcliffe","Westminster","Wheat Ridge","Wiggins","Wiley","Windsor","Winter Park","Woodland Park","Wray","Yampa","Yuma"]},{"STATECODE":"CT","COUNTRY":"United States","STATE":"Connecticut"},{"STATECODE":"DE","COUNTRY":"United States","STATE":"Delaware"},{"STATECODE":"FL","COUNTRY":"United States","STATE":"Florida"},{"STATECODE":"GA","COUNTRY":"United States","STATE":"Georgia"},{"STATECODE":"HI","COUNTRY":"United States","STATE":"Hawaii"},{"STATECODE":"ID","COUNTRY":"United States","STATE":"Idaho"},{"STATECODE":"IL","COUNTRY":"United States","STATE":"Illinois","CITIES":["Abingdon","Adair","Addieville","Addison","Akin","Albany","Albers","Albion","Aledo","Alexander","Alexis","Algonquin","Alhambra","Allendale","Allerton","Alma","Alpha","Alsey","Alsip","Altamont","Alto pass","Alton","Altona","Alvin","Amboy","Anchor","Ancona","Andalusia","Andover","Anna","Annapolis","Annawan","Antioch","Apple river","Arcola","Arenzville","Argenta","Arlington","Arlington heights","Armington","Armstrong","Aroma park","Arrowsmith","Arthur","Ashkum","Ashland","Ashley","Ashmore","Ashton","Assumption","Astoria","Athens","Atkinson","Atlanta","Atwood","Auburn","Augusta","Aurora","Ava","Aviston","Avon","Baileyville","Baldwin","Bardolph","Barnhill","Barrington","Barry","Barstow","Bartelso","Bartlett","Basco","Batavia","Batchtown","Bath","Baylis","Beardstown","Beason","Beaverville","Beckemeyer","Bedford park","Beecher","Beecher city","Belknap","Belle rive","Belleville","Bellflower","Bellmont","Bellwood","Belvidere","Bement","Benld","Bensenville","Benson","Benton","Berkeley","Berwick","Berwyn","Bethalto","Bethany","Big rock","Biggsville","Bingham","Bishop hill","Bismarck","Blackstone","Blandinsville","Bloomingdale","Bloomington","Blue island","Blue mound","Bluff springs","Bluffs","Bluford","Bolingbrook","Bondville","Bone gap","Bonfield","Bonnie","Boody","Bourbonnais","Bowen","Braceville","Bradford","Bradley","Braidwood","Breese","Bridgeport","Bridgeview","Brighton","Brimfield","Bristol","Broadlands","Broadview","Brocton","Brookfield","Brookport","Broughton","Browning","Browns","Brownstown","Brussels","Bryant","Buckingham","Buckley","Buckner","Buda","Buffalo","Buffalo grove","Buffalo prairie","Bulpitt","Buncombe","Bunker hill","Burbank","Bureau","Burlington","Burnt prairie","Bushnell","Butler","Byron","Cabery","Cairo","Caledonia","Calhoun","Calumet city","Camargo","Cambria","Cambridge","Camden","Cameron","Camp grove","Camp point","Campbell hill","Campus","Canton","Cantrall","Capron","Carbon cliff","Carbondale","Carlinville","Carlock","Carlyle","Carman","Carmi","Carol stream","Carpentersville","Carrier mills","Carrollton","Carterville","Carthage","Cary","Casey","Caseyville","Castleton","Catlin","Cave in rock","Cedar point","Cedarville","Centralia","Cerro gordo","Chadwick","Chambersburg","Champaign","Chana","Chandlerville","Channahon","Chapin","Charleston","Chatham","Chatsworth","Chebanse","Chenoa","Cherry","Cherry valley","Chester","Chesterfield","Chestnut","Chicago","Chicago heights","Chicago ridge","Chillicothe","Chrisman","Christopher","Cicero","Cisco","Cisne","Cissna park","Clare","Claremont","Clarendon hills","Clay city","Clayton","Claytonville","Clifton","Clinton","Coal city","Coal valley","Coatsburg","Cobden","Coello","Coffeen","Colchester","Colfax","Collinsville","Collison","Colona","Colp","Columbia","Colusa","Compton","Concord","Congerville","Cooksville","Cordova","Cornell","Cornland","Cortland","Cottage hills","Coulterville","Country club hills","Cowden","Creal springs","Crescent city","Crest hill","Creston","Crestwood","Crete","Creve coeur","Cropsey","Crossville","Crystal lake","Cuba","Cullom","Cutler","Cypress","Dahinda","Dahlgren","Dakota","Dale","Dallas city","Dalton city","Dalzell","Dana","Danforth","Danvers","Danville","Darien","Davis","Davis junction","Dawson","De land","De soto","Decatur","Deer creek","Deer grove","Deerfield","Dekalb","Delavan","Dennison","Depue","Des plaines","Dewey","Dewitt","Dieterich","Divernon","Dix","Dixon","Dolton","Dongola","Donnellson","Donovan","Dorsey","Dover","Dow","Dowell","Downers grove","Downs","Du bois","Du quoin","Dundas","Dundee","Dunfermline","Dunlap","Dupo","Durand","Dwight","Eagarville","Earlville","East alton","East carondelet","East dubuque","East galesburg","East lynn","East moline","East peoria","East saint louis","Easton","Eddyville","Edelstein","Edgewood","Edinburg","Edwards","Edwardsville","Effingham","El paso","Elburn","Eldena","Eldorado","Eldred","Eleroy","Elgin","Elizabeth","Elizabethtown","Elk grove village","Elkhart","Elkville","Ellery","Elliott","Ellis grove","Ellisville","Ellsworth","Elmhurst","Elmwood","Elmwood park","Elsah","Elvaston","Elwin","Elwood","Emden","Emington","Emma","Energy","Enfield","Eola","Equality","Erie","Esmond","Essex","Eureka","Evanston","Evansville","Evergreen park","Ewing","Fairbury","Fairfield","Fairmount","Fairview","Fairview heights","Farina","Farmer city","Farmersville","Farmington","Fenton","Ferris","Fiatt","Fidelity","Fieldon","Fillmore","Findlay","Fisher","Fithian","Flanagan","Flat rock","Flora","Flossmoor","Foosland","Forest city","Forest park","Forrest","Forreston","Forsyth","Fowler","Fox lake","Fox river grove","Fox valley","Frankfort","Franklin","Franklin grove","Franklin park","Frederick","Freeburg","Freeman spur","Freeport","Ft sheridan","Fulton","Fults","Galatia","Galena","Galesburg","Galt","Galva","Garden prairie","Gardner","Gays","Geff","Geneseo","Geneva","Genoa","Georgetown","Gerlaw","German valley","Germantown","Gibson city","Gifford","Gilberts","Gillespie","Gilman","Gilson","Girard","Gladstone","Glasford","Glen carbon","Glen ellyn","Glenarm","Glencoe","Glendale heights","Glenview","Glenwood","Godfrey","Golconda","Golden","Golden eagle","Golden gate","Golf","Good hope","Goodfield","Goodwine","Goreville","Gorham","Grafton","Grand chain","Grand ridge","Grand tower","Granite city","Grant park","Grantsburg","Granville","Graymont","Grayslake","Grayville","Great lakes","Green valley","Greenfield","Greenup","Greenview","Greenville","Gridley","Griggsville","Groveland","Gurnee","Hamburg","Hamel","Hamilton","Hammond","Hampshire","Hampton","Hanna city","Hanover","Hanover park","Hardin","Harmon","Harrisburg","Harristown","Hartford","Hartsburg","Harvard","Harvel","Harvey","Harwood heights","Havana","Hazel crest","Hebron","Hecker","Henderson","Hennepin","Henning","Henry","Herod","Herrick","Herrin","Herscher","Hettick","Heyworth","Hickory hills","Hidalgo","Highland","Highland park","Highwood","Hillsboro","Hillsdale","Hillside","Hillview","Hinckley","Hindsboro","Hines","Hinsdale","Hoffman","Hoffman estates","Holcomb","Homer","Homer glen","Hometown","Homewood","Hoopeston","Hooppole","Hopedale","Hopkins park","Hoyleton","Hudson","Huey","Hull","Humboldt","Hume","Huntley","Huntsville","Hurst","Hutsonville","Illinois city","Illiopolis","Ina","Indianola","Industry","Ingleside","Ingraham","Ipava","Iroquois","Irving","Irvington","Island lake","Itasca","Iuka","Ivesdale","Jacksonville","Jacob","Janesville","Jerseyville","Jewett","Johnsonville","Johnston city","Joliet","Jonesboro","Joppa","Joy","Junction","Justice","Kampsville","Kane","Kaneville","Kankakee","Kansas","Karbers ridge","Karnak","Kasbeer","Keenes","Keensburg","Keithsburg","Kell","Kempton","Kenilworth","Kenney","Kent","Kewanee","Keyesport","Kilbourne","Kincaid","Kinderhook","Kingston","Kingston mines","Kinmundy","Kinsman","Kirkland","Kirkwood","Knoxville","La fayette","La grange","La grange park","La harpe","La moille","La place","La prairie","La rose","La salle","Lacon","Ladd","Lafox","Lake bluff","Lake forest","Lake fork","Lake in the hills","Lake villa","Lake zurich","Lakewood","Lanark","Lane","Lansing","Latham","Laura","Lawndale","Lawrenceville","Le roy","Leaf river","Lebanon","Lee","Lee center","Leland","Lemont","Lena","Lenzburg","Leonore","Lerna","Lewistown","Lexington","Liberty","Libertyville","Lima","Lincoln","Lincolns new salem","Lincolnshire","Lincolnwood","Lindenwood","Lisle","Litchfield","Literberry","Little york","Littleton","Liverpool","Livingston","Loami","Lockport","Loda","Logan","Lomax","Lombard","London mills","Long point","Longview","Loogootee","Loraine","Lostant","Louisville","Lovejoy","Loves park","Lovington","Lowpoint","Ludlow","Lyndon","Lynn center","Lyons","Macedonia","Machesney park","Mackinaw","Macomb","Macon","Madison","Maeystown","Magnolia","Mahomet","Makanda","Malden","Malta","Manchester","Manhattan","Manito","Manlius","Mansfield","Manteno","Maple park","Mapleton","Maquon","Marengo","Marietta","Marine","Marion","Marissa","Mark","Markham","Maroa","Marseilles","Marshall","Martinsville","Martinton","Maryville","Mascoutah","Mason","Mason city","Matherville","Matteson","Mattoon","Maunie","Maywood","Mazon","Mc connell","Mc lean","Mc leansboro","Mc nabb","Mchenry","Mechanicsburg","Media","Medinah","Medora","Melrose park","Melvin","Menard","Mendon","Mendota","Meredosia","Merna","Metamora","Metcalf","Metropolis","Michael","Middletown","Midlothian","Milan","Milford","Mill shoals","Millbrook","Milledgeville","Miller city","Millington","Millstadt","Milmine","Milton","Mineral","Minier","Minonk","Minooka","Mode","Modesto","Modoc","Mokena","Moline","Momence","Monee","Monmouth","Monroe center","Montgomery","Monticello","Montrose","Mooseheart","Moro","Morris","Morrison","Morrisonville","Morton","Morton grove","Mossville","Mound city","Mounds","Mount auburn","Mount carmel","Mount carroll","Mount erie","Mount morris","Mount olive","Mount prospect","Mount pulaski","Mount sterling","Mount vernon","Mount zion","Moweaqua","Mozier","Muddy","Mulberry grove","Mulkeytown","Muncie","Mundelein","Murdock","Murphysboro","Murrayville","Nachusa","Naperville","Nashville","Nason","National stock yards","Nauvoo","Nebo","Neoga","Neponset","New athens","New baden","New bedford","New berlin","New boston","New burnside","New canton","New douglas","New haven","New holland","New lenox","New memphis","New salem","New windsor","Newark","Newman","Newton","Niantic","Niles","Nilwood","Niota","Noble","Nokomis","Nora","Normal","Norris","Norris city","North aurora","North chicago","North henderson","Northbrook","O fallon","Oak brook","Oak forest","Oak lawn","Oak park","Oakdale","Oakford","Oakland","Oakwood","Oblong","Oconee","Odell","Odin","Ogden","Oglesby","Ohio","Ohlman","Okawville","Olive branch","Olmsted","Olney","Olympia fields","Omaha","Onarga","Oneida","Opdyke","Ophiem","Oquawka","Orangeville","Oraville","Oreana","Oregon","Orient","Orion","Orland park","Osco","Oswego","Ottawa","Owaneco","Ozark","Palatine","Palestine","Palmer","Palmyra","Paloma","Palos heights","Palos hills","Palos park","Pana","Panama","Papineau","Paris","Park forest","Park ridge","Parkersburg","Patoka","Patterson","Paw paw","Pawnee","Paxton","Payson","Pearl","Pearl city","Pecatonica","Pekin","Pembroke township","Penfield","Peoria","Peoria heights","Peotone","Percy","Perks","Perry","Peru","Pesotum","Petersburg","Philo","Piasa","Pierron","Pinckneyville","Piper city","Pittsburg","Pittsfield","Plainfield","Plainville","Plano","Plato center","Pleasant hill","Pleasant plains","Plymouth","Pocahontas","Polo","Pomona","Pontiac","Poplar grove","Port byron","Posen","Potomac","Prairie city","Prairie du rocher","Preemption","Princeton","Princeville","Prophetstown","Prospect heights","Pulaski","Putnam","Quincy","Radom","Raleigh","Ramsey","Rankin","Ransom","Rantoul","Rapids city","Raritan","Raymond","Red bud","Reddick","Redmon","Renault","Reynolds","Richmond","Richton park","Richview","Ridge farm","Ridgway","Ridott","Rinard","Ringwood","Rio","River forest","River grove","Riverdale","Riverside","Riverton","Roanoke","Robbins","Roberts","Robinson","Rochelle","Rochester","Rock city","Rock falls","Rock island","Rockbridge","Rockford","Rockport","Rockton","Rockwood","Rolling meadows","Rome","Romeoville","Roodhouse","Rosamond","Roscoe","Roselle","Roseville","Rosiclare","Rossville","Round lake","Roxana","Royal","Royalton","Rushville","Russell","Rutland","Sadorus","Sailor springs","Sainte marie","Salem","San jose","Sandoval","Sandwich","Saunemin","Savanna","Savoy","Sawyerville","Saybrook","Scales mound","Schaumburg","Scheller","Schiller park","Sciota","Scott air force base","Scottville","Seaton","Seatonville","Secor","Seneca","Serena","Sesser","Seward","Seymour","Shabbona","Shannon","Shawneetown","Sheffield","Shelbyville","Sheldon","Sheridan","Sherman","Sherrard","Shipman","Shirland","Shirley","Shobonier","Shorewood","Shumway","Sibley","Sidell","Sidney","Sigel","Silvis","Simpson","Sims","Skokie","Smithboro","Smithfield","Smithshire","Smithton","Somonauk","Sorento","South beloit","South elgin","South holland","South pekin","South roxana","South wilmington","Sparland","Sparta","Speer","Spring grove","Spring valley","Springerton","Springfield","St anne","St augustine","St charles","St david","St elmo","St francisville","St jacob","St joseph","St libory","St peter","Standard","Stanford","Staunton","Steeleville","Steger","Sterling","Steward","Stewardson","Stillman valley","Stockland","Stockton","Stone park","Stonefort","Stonington","Stoy","Strasburg","Strawn","Streamwood","Streator","Stronghurst","Sublette","Sugar grove","Sullivan","Summerfield","Summit argo","Sumner","Sutter","Sycamore","Table grove","Tallula","Tamaroa","Tamms","Tampico","Taylor ridge","Taylor springs","Taylorville","Techny","Tennessee","Teutopolis","Texico","Thawville","Thayer","Thebes","Thomasboro","Thompsonville","Thomson","Thornton","Tilden","Tilton","Timewell","Tinley park","Tiskilwa","Toledo","Tolono","Toluca","Tonica","Topeka","Toulon","Tovey","Towanda","Tower hill","Tremont","Trenton","Trilla","Triumph","Trivoli","Troy","Troy grove","Tuscola","Ullin","Union","Union hill","University park","Urbana","Ursa","Utica","Valier","Valmeyer","Van orin","Vandalia","Varna","Venice","Vergennes","Vermilion","Vermont","Vernon","Vernon hills","Verona","Versailles","Victoria","Vienna","Villa grove","Villa park","Villa ridge","Viola","Virden","Virgil","Virginia","Wadsworth","Waggoner","Walnut","Walnut hill","Walsh","Walshville","Waltonville","Wapella","Warren","Warrensburg","Warrenville","Warsaw","Wasco","Washburn","Washington","Wataga","Waterloo","Waterman","Watseka","Watson","Wauconda","Waukegan","Waverly","Wayne","Wayne city","Waynesville","Wedron","Weldon","Wellington","Wenona","West brooklyn","West chicago","West frankfort","West liberty","West point","West salem","West union","West york","Westchester","Western springs","Westfield","Westmont","Westville","Wheaton","Wheeler","Wheeling","White hall","White heath","Whittington","Williamsfield","Williamsville","Willisville","Willow hill","Willow springs","Willowbrook","Wilmette","Wilmington","Wilsonville","Winchester","Windsor","Winfield","Winnebago","Winnetka","Winslow","Winthrop harbor","Witt","Wolf lake","Wonder lake","Wood dale","Wood river","Woodhull","Woodland","Woodlawn","Woodridge","Woodson","Woodstock","Woosung","Worden","Worth","Wrights","Wyanet","Wyoming","Xenia","Yale","Yates city","Yorkville","Zeigler","Zion"]},{"STATECODE":"IN","COUNTRY":"United States","STATE":"Indiana"},{"STATECODE":"IA","COUNTRY":"United States","STATE":"Iowa"},{"STATECODE":"KS","COUNTRY":"United States","STATE":"Kansas"},{"STATECODE":"KY","COUNTRY":"United States","STATE":"Kentucky"},{"STATECODE":"LA","COUNTRY":"United States","STATE":"Louisiana"},{"STATECODE":"ME","COUNTRY":"United States","STATE":"Maine"},{"STATECODE":"MD","COUNTRY":"United States","STATE":"Maryland"},{"STATECODE":"MA","COUNTRY":"United States","STATE":"Massachusetts"},{"STATECODE":"MI","COUNTRY":"United States","STATE":"Michigan"},{"STATECODE":"MN","COUNTRY":"United States","STATE":"Minnesota"},{"STATECODE":"MS","COUNTRY":"United States","STATE":"Mississippi"},{"STATECODE":"MO","COUNTRY":"United States","STATE":"Missouri"},{"STATECODE":"MT","COUNTRY":"United States","STATE":"Montana"},{"STATECODE":"NE","COUNTRY":"United States","STATE":"Nebraska"},{"STATECODE":"NV","COUNTRY":"United States","STATE":"Nevada"},{"STATECODE":"NH","COUNTRY":"United States","STATE":"New Hampshire"},{"STATECODE":"NJ","COUNTRY":"United States","STATE":"New Jersey"},{"STATECODE":"NM","COUNTRY":"United States","STATE":"New Mexico"},{"STATECODE":"NY","COUNTRY":"United States","STATE":"New York"},{"STATECODE":"NC","COUNTRY":"United States","STATE":"North Carolina"},{"STATECODE":"ND","COUNTRY":"United States","STATE":"North Dakota"},{"STATECODE":"OH","COUNTRY":"United States","STATE":"Ohio"},{"STATECODE":"OK","COUNTRY":"United States","STATE":"Oklahoma"},{"STATECODE":"OR","COUNTRY":"United States","STATE":"Oregon"},{"STATECODE":"PA","COUNTRY":"United States","STATE":"Pennsylvania"},{"STATECODE":"RI","COUNTRY":"United States","STATE":"Rhode Island"},{"STATECODE":"SC","COUNTRY":"United States","STATE":"South Carolina"},{"STATECODE":"SD","COUNTRY":"United States","STATE":"South Dakota"},{"STATECODE":"TN","COUNTRY":"United States","STATE":"Tennessee"},{"STATECODE":"TX","COUNTRY":"United States","STATE":"Texas"},{"STATECODE":"UT","COUNTRY":"United States","STATE":"Utah"},{"STATECODE":"VT","COUNTRY":"United States","STATE":"Vermont"},{"STATECODE":"VA","COUNTRY":"United States","STATE":"Virginia"},{"STATECODE":"WA","COUNTRY":"United States","STATE":"Washington"},{"STATECODE":"DC","COUNTRY":"United States","STATE":"Washington DC"},{"STATECODE":"WV","COUNTRY":"United States","STATE":"West Virginia"},{"STATECODE":"WI","COUNTRY":"United States","STATE":"Wisconsin"},{"STATECODE":"WY","COUNTRY":"United States","STATE":"Wyoming"}],"Japan":[{"STATECODE":"HK","COUNTRY":"Japan","STATEVALUE":"Hokkaido","STATE":"北海道"},{"STATECODE":"AP","COUNTRY":"Japan","STATEVALUE":"Aomori Prefecture","STATE":"青森県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Iwate Prefecture","STATE":"岩手県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Miyagi Prefecture","STATE":"宮城県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Akita","STATE":"秋田県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Yamagata Prefecture","STATE":"山形県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Fukushima Prefecture","STATE":"福島県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Ibaraki Prefecture","STATE":"茨城県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Tochigi Prefecture","STATE":"栃木県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Gunma Prefecture","STATE":"群馬県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Saitama","STATE":"埼玉県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Chiba Prefecture","STATE":"千葉県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Tokyo","STATE":"東京都"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Kanagawa Prefecture","STATE":"神奈川県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Niigata Prefecture","STATE":"新潟県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Toyama Prefecture","STATE":"富山県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Ishikawa Prefecture","STATE":"石川県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Fukui Prefecture","STATE":"福井県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Yamanashi Prefecture","STATE":"山梨県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Nagano Prefecture","STATE":"長野県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Gifu Prefecture","STATE":"岐阜県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Shizuoka Prefecture","STATE":"静岡県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Aichi prefecture","STATE":"愛知県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Mie Prefecture","STATE":"三重県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Shiga Prefecture","STATE":"滋賀県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Kyoto","STATE":"京都府"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Osaka Prefecture","STATE":"大阪府"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Hyogo Prefecture","STATE":"兵庫県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Nara Prefecture","STATE":"奈良県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Wakayama Prefecture","STATE":"和歌山県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Tottori Prefecture","STATE":"鳥取県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Shimane Prefecture","STATE":"島根県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Okayama Prefecture","STATE":"岡山県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Hiroshima","STATE":"広島県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Yamaguchi Prefecture","STATE":"山口県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Tokushima Prefecture","STATE":"徳島県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Kagawa Prefecture","STATE":"香川県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Ehime Prefecture","STATE":"愛媛県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Kochi Prefecture","STATE":"高知県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Fukuoka Prefecture","STATE":"福岡県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Saga Prefecture","STATE":"佐賀県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Nagasaki Prefecture","STATE":"長崎県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Kumamoto Prefecture","STATE":"熊本県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Oita Prefecture","STATE":"大分県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Miyazaki Prefecture","STATE":"宮崎県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Kagoshima prefecture","STATE":"鹿児島県"},{"STATECODE":"PY","COUNTRY":"Japan","STATEVALUE":"Okinawa Prefecture","STATE":"沖縄県"}],"Brazil":[{"COUNTRY":"Brazil","STATECODE":"AC","STATE":"Acre"},{"COUNTRY":"Brazil","STATECODE":"AL","STATE":"Alagoas"},{"COUNTRY":"Brazil","STATECODE":"AM","STATE":"Amazonas"},{"COUNTRY":"Brazil","STATECODE":"AP","STATE":"Amapá"},{"COUNTRY":"Brazil","STATECODE":"BA","STATE":"Bahia"},{"COUNTRY":"Brazil","STATECODE":"CE","STATE":"Ceará"},{"COUNTRY":"Brazil","STATECODE":"DF","STATE":"Distrito Federal"},{"COUNTRY":"Brazil","STATECODE":"ES","STATE":"Espírito Santo"},{"COUNTRY":"Brazil","STATECODE":"GO","STATE":"Goiás"},{"COUNTRY":"Brazil","STATECODE":"MA","STATE":"Maranhão"},{"COUNTRY":"Brazil","STATECODE":"MG","STATE":"Minas Gerais"},{"COUNTRY":"Brazil","STATECODE":"MS","STATE":"Mato Grosso do Sul"},{"COUNTRY":"Brazil","STATECODE":"MT","STATE":"Mato Grosso"},{"COUNTRY":"Brazil","STATECODE":"PA","STATE":"Pará"},{"COUNTRY":"Brazil","STATECODE":"PB","STATE":"Paraíba"},{"COUNTRY":"Brazil","STATECODE":"PE","STATE":"Pernambuco"},{"COUNTRY":"Brazil","STATECODE":"PI","STATE":"Piauí"},{"COUNTRY":"Brazil","STATECODE":"PR","STATE":"Paraná"},{"COUNTRY":"Brazil","STATECODE":"RJ","STATE":"Rio de Janeiro"},{"COUNTRY":"Brazil","STATECODE":"RN","STATE":"Rio Grande do Norte"},{"COUNTRY":"Brazil","STATECODE":"RO","STATE":"Rondônia"},{"COUNTRY":"Brazil","STATECODE":"RR","STATE":"Roraima"},{"COUNTRY":"Brazil","STATECODE":"RS","STATE":"Rio Grande do Sul"},{"COUNTRY":"Brazil","STATECODE":"SC","STATE":"Santa Catarina"},{"COUNTRY":"Brazil","STATECODE":"SE","STATE":"Sergipe"},{"COUNTRY":"Brazil","STATECODE":"SP","STATE":"São Paulo"},{"COUNTRY":"Brazil","STATECODE":"TO","STATE":"Tocantins"}],"Malaysia":[{"STATECODE":"JHR","COUNTRY":"Malaysia","STATE":"Johor"},{"STATECODE":"KDH","COUNTRY":"Malaysia","STATE":"Kedah"},{"STATECODE":"KTN","COUNTRY":"Malaysia","STATE":"Kelantan"},{"STATECODE":"MLK","COUNTRY":"Malaysia","STATE":"Melaka"},{"STATECODE":"NSN","COUNTRY":"Malaysia","STATE":"Negeri Sembilan"},{"STATECODE":"PHG","COUNTRY":"Malaysia","STATE":"Pahang"},{"STATECODE":"PNG","COUNTRY":"Malaysia","STATE":"Pulau Pinang"},{"STATECODE":"PRK","COUNTRY":"Malaysia","STATE":"Perak"},{"STATECODE":"PLS","COUNTRY":"Malaysia","STATE":"Perlis"},{"STATECODE":"SGR","COUNTRY":"Malaysia","STATE":"Selangor"},{"STATECODE":"TRG","COUNTRY":"Malaysia","STATE":"Terengganu"},{"STATECODE":"SBH","COUNTRY":"Malaysia","STATE":"Sabah"},{"STATECODE":"SWK","COUNTRY":"Malaysia","STATE":"Sarawak"},{"STATECODE":"WPKL","COUNTRY":"Malaysia","STATE":"Wilayah Persekutuan Kuala Lumpur"},{"STATECODE":"WPLB","COUNTRY":"Malaysia","STATE":"Wilayah Persekutuan Labuan"},{"STATECODE":"WPPJ","COUNTRY":"Malaysia","STATE":"Wilayah Persekutuan Putrajaya"}],"United Arab Emirates":[{"COUNTRY":"United Arab Emirates","STATECODE":"AJ","STATE":"Ajman"},{"COUNTRY":"United Arab Emirates","STATECODE":"AB","STATE":"Abu Dhabi"},{"COUNTRY":"United Arab Emirates","STATECODE":"DU","STATE":"Dubai"},{"COUNTRY":"United Arab Emirates","STATECODE":"FU","STATE":"Fujairah"},{"COUNTRY":"United Arab Emirates","STATECODE":"RA","STATE":"Ras al-Khaimah"},{"COUNTRY":"United Arab Emirates","STATECODE":"SH","STATE":"Sharjah"},{"COUNTRY":"United Arab Emirates","STATECODE":"UM","STATE":"Umm al-Quwain"}],"Australia":[{"STATECODE":"NSW","COUNTRY":"Australia","STATE":"New South Wales"},{"STATECODE":"VIC","COUNTRY":"Australia","STATE":"Victoria"},{"STATECODE":"QLD","COUNTRY":"Australia","STATE":"Queensland"},{"STATECODE":"WA","COUNTRY":"Australia","STATE":"Western Australia"},{"STATECODE":"SA","COUNTRY":"Australia","STATE":"South Australia"},{"STATECODE":"TAS","COUNTRY":"Australia","STATE":"Tasmania"},{"STATECODE":"ACT","COUNTRY":"Australia","STATE":"Australian Capital Territory"},{"STATECODE":"NT","COUNTRY":"Australia","STATE":"Northern Territory"}],"India":[{"STATECODE":"AP","COUNTRY":"India","STATETINNO":"37","STATE":"Andhra Pradesh"},{"STATECODE":"AR","COUNTRY":"India","STATETINNO":"12","STATE":"Arunachal Pradesh"},{"STATECODE":"AS","COUNTRY":"India","STATETINNO":"18","STATE":"Assam"},{"STATECODE":"BR","COUNTRY":"India","STATETINNO":"10","STATE":"Bihar"},{"STATECODE":"CT","COUNTRY":"India","STATETINNO":"22","STATE":"Chhattisgarh"},{"STATECODE":"DL","COUNTRY":"India","STATETINNO":"07","STATE":"Delhi"},{"STATECODE":"GA","COUNTRY":"India","STATETINNO":"30","STATE":"Goa"},{"STATECODE":"GJ","COUNTRY":"India","STATETINNO":"24","STATE":"Gujarat"},{"STATECODE":"HR","COUNTRY":"India","STATETINNO":"06","STATE":"Haryana"},{"STATECODE":"HP","COUNTRY":"India","STATETINNO":"02","STATE":"Himachal Pradesh"},{"STATECODE":"JK","COUNTRY":"India","STATETINNO":"01","STATE":"Jammu and Kashmir"},{"STATECODE":"JH","COUNTRY":"India","STATETINNO":"20","STATE":"Jharkhand"},{"STATECODE":"KA","COUNTRY":"India","STATETINNO":"29","STATE":"Karnataka"},{"STATECODE":"KL","COUNTRY":"India","STATETINNO":"32","STATE":"Kerala"},{"STATECODE":"MP","COUNTRY":"India","STATETINNO":"23","STATE":"Madhya Pradesh"},{"STATECODE":"MH","COUNTRY":"India","STATETINNO":"27","STATE":"Maharashtra"},{"STATECODE":"MN","COUNTRY":"India","STATETINNO":"14","STATE":"Manipur"},{"STATECODE":"ML","COUNTRY":"India","STATETINNO":"17","STATE":"Meghalaya"},{"STATECODE":"MZ","COUNTRY":"India","STATETINNO":"15","STATE":"Mizoram"},{"STATECODE":"NL","COUNTRY":"India","STATETINNO":"13","STATE":"Nagaland"},{"STATECODE":"OR","COUNTRY":"India","STATETINNO":"21","STATE":"Odisha"},{"STATECODE":"PB","COUNTRY":"India","STATETINNO":"03","STATE":"Punjab"},{"STATECODE":"RJ","COUNTRY":"India","STATETINNO":"08","STATE":"Rajasthan"},{"STATECODE":"SK","COUNTRY":"India","STATETINNO":"11","STATE":"Sikkim"},{"STATECODE":"TN","COUNTRY":"India","STATETINNO":"33","STATE":"Tamil Nadu"},{"STATECODE":"TG","COUNTRY":"India","STATETINNO":"36","STATE":"Telangana"},{"STATECODE":"TR","COUNTRY":"India","STATETINNO":"16","STATE":"Tripura"},{"STATECODE":"UT","COUNTRY":"India","STATETINNO":"05","STATE":"Uttarakhand"},{"STATECODE":"UP","COUNTRY":"India","STATETINNO":"09","STATE":"Uttar Pradesh"},{"STATECODE":"WB","COUNTRY":"India","STATETINNO":"19","STATE":"West Bengal"},{"STATECODE":"AN","COUNTRY":"India","STATETINNO":"35","STATE":"Andaman and Nicobar Islands"},{"STATECODE":"CH","COUNTRY":"India","STATETINNO":"04","STATE":"Chandigarh"},{"STATECODE":"DN","COUNTRY":"India","STATETINNO":"26","STATE":"Dadra and Nagar Haveli and Daman and Diu"},{"STATECODE":"LD","COUNTRY":"India","STATETINNO":"31","STATE":"Lakshadweep"},{"STATECODE":"PY","COUNTRY":"India","STATETINNO":"34","STATE":"Puducherry"},{"STATECODE":"LA","COUNTRY":"India","STATETINNO":"38","STATE":"Ladakh"}]}
+var countryCodeJson = {"Papua New Guinea":"PG","Cambodia":"KH","Kazakhstan":"KZ","Paraguay":"PY","Bahamas":"BS","Solomon Islands":"SB","Montserrat":"MS","Mali":"ML","Marshall Islands":"MH","Guadeloupe":"GP","Panama":"PA","Laos":"LA","Argentina":"AR","Isle Of Man":"IM","Seychelles":"SC","Belize":"BZ","Zambia":"ZM","Bahrain":"BH","Congo":"CG","Saint Barthelemy":"BL","Namibia":"NA","Comoros":"KM","Faroe Islands":"FO","Finland":"FI","Netherlands Antilles":"AN","Georgia":"GE","Saint Kitts and Nevis":"KN","Yemen":"YE","Eritrea":"ER","Puerto Rico":"PR","Aruba":"AW","Madagascar":"MG","Libya":"LY","Svalbard and Jan Mayen":"SJ","Sweden":"SE","Cocos (Keeling) Islands":"CC","Malawi":"MW","Andorra":"AD","Liechtenstein":"LI","Poland":"PL","Bulgaria":"BG","Jordan":"JO","Tunisia":"TN","Tuvalu":"TV","United Arab Emirates":"AE","Kenya":"KE","French Polynesia":"PF","Djibouti":"DJ","Lebanon":"LB","Azerbaijan":"AZ","Czech Republic":"CZ","Saint Martin (French Part)":"MF","Mauritania":"MR","Saint Lucia":"LC","Guernsey":"GG","Mayotte":"YT","Israel":"IL","San Marino":"SM","Australia":"AU","Bonaire":"BQ","Tajikistan":"TJ","Myanmar":"MM","Cameroon":"CM","Gibraltar":"GI","Cyprus":"CY","Northern Mariana Islands":"MP","Malaysia":"MY","Iceland":"IS","Oman":"OM","Armenia":"AM","Gabon":"GA","Yugoslavia":"YU","Luxembourg":"LU","Brazil":"BR","Turks and Caicos Islands":"TC","Algeria":"DZ","Jersey":"JE","Slovenia":"SI","Antigua and Barbuda":"AG","Colombia":"CO","Ecuador":"EC","Moldova":"MD","Vanuatu":"VU","United States Minor Outlying Islands":"UM","Honduras":"HN","Italy":"IT","Antarctica":"AQ","Nauru":"NR","Guinea-bissau":"GW","Haiti":"HT","Afghanistan":"AF","Burundi":"BI","Singapore":"SG","French Guiana":"GF","American Samoa":"AS","Christmas Island":"CX","Macedonia, The Former Yug":"MK","Netherlands":"NL","China":"CN","Martinique":"MQ","Kyrgyzstan":"KG","Reunion":"RE","Saint Pierre And Miquelon":"PM","Bhutan":"BT","Romania":"RO","Falkland Islands (Malvinas)":"FK","Togo":"TG","Philippines":"PH","Cote d'Ivoire":"CI","Holy See (Vatican City State)":"VA","Uzbekistan":"UZ","Pitcairn":"PN","Zimbabwe":"ZW","British Indian Ocean Territory":"IO","Montenegro":"ME","Dominica":"DM","Indonesia":"ID","Benin":"BJ","Angola":"AO","Virgin Islands (British)":"VG","East Timor":"TL","Brunei Darussalam":"BN","Portugal":"PT","New Caledonia":"NC","Grenada":"GD","Cayman Islands":"KY","Greece":"GR","Sint Maarten (Dutch Part)":"SX","Latvia":"LV","Mongolia":"MN","Morocco":"MA","Guatemala":"GT","Guyana":"GY","South Georgia and The South Sandwich Islands":"GS","Iraq":"IQ","Chile":"CL","Nepal":"NP","Tanzania":"TZ","Ukraine":"UA","Ghana":"GH","Anguilla":"AI","India":"IN","Canada":"CA","Congo, Democratic Republic":"CD","Maldives":"MV","Turkey":"TR","Belgium":"BE","Taiwan":"TW","South Africa":"ZA","Trinidad and Tobago":"TT","Bermuda":"BM","Aland Islands":"AX","Central African Republic":"CF","Jamaica":"JM","Peru":"PE","Turkmenistan":"TM","Germany":"DE","Fiji":"FJ","Tokelau":"TK","Hong Kong":"HK","United States":"US","Guinea":"GN","Chad":"TD","Somalia":"SO","Sao Tome and Principe":"ST","Thailand":"TH","Equatorial Guinea":"GQ","Kiribati":"KI","Costa Rica":"CR","Saint Vincent and The Grenadines":"VC","Vietnam":"VN","Kuwait":"KW","Nigeria":"NG","Croatia":"HR","Cook Islands":"CK","Sri Lanka":"LK","Uruguay":"UY","United Kingdom":"GB","Switzerland":"CH","Samoa":"WS","Palestine":"PS","Spain":"ES","Liberia":"LR","Venezuela":"VE","Burkina Faso":"BF","Swaziland":"SZ","Palau":"PW","Estonia":"EE","Wallis and Futuna":"WF","Niue":"NU","Austria":"AT","South Korea":"KR","Mozambique":"MZ","El Salvador":"SV","Monaco":"MC","Guam":"GU","Lesotho":"LS","Tonga":"TO","Western Sahara":"EH","Hungary":"HU","South Sudan":"SS","Japan":"JP","Belarus":"BY","Curacao":"CW","Mauritius":"MU","Bouvet Island":"BV","Albania":"AL","Norfolk Island":"NF","Virgin Islands (U.S.)":"VI","New Zealand":"NZ","Senegal":"SN","Ethiopia":"ET","Micronesia, Federated States":"FM","Egypt":"EG","Macau":"MO","Sierra Leone":"SL","Bolivia":"BO","Malta":"MT","Saudi Arabia":"SA","Cape Verde":"CV","Pakistan":"PK","Kosovo":"XK","Gambia":"GM","Ireland":"IE","Qatar":"QA","Heard Island and Mcdonald Islands":"HM","Slovakia":"SK","France":"FR","Lithuania":"LT","Serbia":"RS","Bosnia and Herzegovina":"BA","Niger":"NE","Rwanda":"RW","French Southern Territories":"TF","Bangladesh":"BD","Barbados":"BB","Nicaragua":"NI","Norway":"NO","Botswana":"BW","Denmark":"DK","Dominican Republic":"DO","Mexico":"MX","Uganda":"UG","Suriname":"SR","Greenland":"GL","Saint Helena":"SH"}
+var euCountries = ["AT","BE","BG","CY","CZ","HR","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","PT-20","PT-30","RO","SK","SI","ES","SE","GB"]
+// var countryState = stateJson[countryName];
+var mode=$(this).find('option:selected').attr('newsletter_mode'); //No I18N
+if(mode==="1"){
+$("#signupplan").html('<td><div class="get-signup-plan optnbtnClass">'
++'<input checked="checked" id="gdpr-business" name="x_accountType" value="2" type="radio">'
++'<label for="gdpr-business">'+business+'</label><input id="gdpr-individual" name="x_accountType" value="1" type="radio">'
++'<label for="gdpr-individual">'+individual+'</label>'
++'</div></td>');
+}
+var countryCode = countryCodeJson[countryName];
+if(euCountries && countryCode && euCountries.indexOf(countryCode) !== -1){
+$('.za-newsletter-container').show();
+} else {
+$('.za-newsletter-container').hide();
+}
+$(".za-state-container").html('');
+var text = constrcutStateOptions(countryName, stateJson);
+$(".za-state-container").html(text);
+setCountryCode(countryCode,"");
+});
+
+// init SignUp form
+
+$.validator.addMethod("clength",function(value,element){return (value!=null && value.length<=255)?true:false;});//No I18N
+
+$.validator.addMethod("customcheck",function(value,element){ //No I18N
+if(signup.customfieldregex && signup.customfieldregex!==""){
+return signup.customfieldregex.test(value);
+}else{
+return false;
+}
+});
+$.validator.addMethod("number", function (value, element) { //No I18N
+var phonenum = /^[+]{0,1}[0-9()\-]*$/;
+if (!(value.match(phonenum))) {
+return false;
+}
+return true;
+});
+if($("input[name=x_name]").is(":visible")){
+$("input[name=x_name]").mouseout(function() {
+$("input[name=lastname]").val($("input[name=x_name]").val());
+}); 
+}
+$.validator.addMethod("nlength",function(value,element){return ((value!=null && value.length<=100))?true:false;});//No I18N
+var rulesObj = {
+"x_r_address/1.company_name" : {	//No I18N 
+"required":true,  //No I18N
+"clength":true,  //No I18N
+"validateRemote":{} //No I18N
+},
+"x_custom_number" :{ //No I18N
+"required":true,//No I18N
+"customcheck":true  //No I18N
+},
+"tos":{ //No I18N
+"required":true,  //No I18N
+},
+"x_name":{ //No I18N
+"required":true,  //No I18N
+"nlength":true,  //No I18N
+},
+"r_address/1.phone" : { //No I18N
+"required": true, //No I18N
+"number":true //No I18N
+},
+"x_state" : {	//NO I18N
+"required" : true,	//NO I18N
+},
+"x_country" : {	//NO I18N
+"required" : true,	//NO I18N
+},
+"x_end_user_email" : {	//NO I18N
+"validateRemote":{} //No I18N
+},
+};
+var messageObj = {
+"x_r_address/1.company_name" : {//No I18N
+"required" :  "Please enter the company name", //No I18N
+"clength"  :  "Please use less than 255 characters." //No I18N
+},
+"tos":{  //No I18N
+"required" :  "Please read and accept the Terms of Service and Privacy Policy", //No I18N
+},
+"x_custom_number" :{ //No I18N
+"required":  signup.validationRequiredError, //No I18N
+"customcheck": signup.validationCustomError, //No I18N 
+},
+"x_name":{//No I18N
+"required" :   "Please specify your Name", //No I18N
+"nlength"  :  "Please use less than 100 characters." //No I18N
+},
+"r_address/1.phone" : { //No I18N
+"required" :    "Please enter phone number", //No I18N
+}, 
+"x_state" : { //No I18N
+"required" : "This field is required", //No I18N
+}
+};
+if(multiFields && Object.keys(multiFields).length >  0){
+for( m = 0; m < multiFields.length ;m ++){
+var mObj = multiFields[m];
+mvalidationRequiredMsg = mObj.validationRequiredError;
+mvalidationCustomMsg = mObj.validationCustomError;
+fieldname = mObj.fieldname;
+fieldtype = mObj.fieldtype;
+var rObj = {}; 
+rObj.required = true;
+var customcheckvar = "customcheck"+""+m; //No I18N
+rObj[customcheckvar] = true;
+rulesObj[fieldname] = rObj; 
+customRegex[customcheckvar] = mObj.regex;
+signup[customcheckvar] = mObj.regex;
+var mesObj = {}; 
+mesObj.required = mvalidationRequiredMsg;
+mesObj[customcheckvar] = mvalidationCustomMsg;
+messageObj[fieldname] = mesObj;
+}
+if(Object.keys(customRegex).length >  0){
+$.each(customRegex, function(key, val){
+$.validator.addMethod(key,function(value,element){ 
+if(val && val!==""){
+if(val === 'select'){
+return (value != '');	
+}else{
+return new RegExp(val).test(value);
+}
+}else{
+return false;
+}
+});  
+});		         
+}  
+}
+$("#signupform").zaSignUp({ //No i18N
+validator : {
+rules : rulesObj,
+messages : messageObj 
+},
+onsubmit: function(data) {
+$('.submitSignUp').addClass('diableBtnSignup');//No i18N
+$('.sgnemail').prop('disabled', true);  //NO I18N
+$('#country, #state').prop('disabled', true);  //NO I18N
+$('.successLoading').show();//No i18N
+},
+oncomplete: function(state) {
+if(state == jQuery.fn.zaSignUp.SIGNUP_STATE.SIGNUP_COMPLETED || state == jQuery.fn.zaSignUp.SIGNUP_STATE.UPDATE_SERVICE_FIELDS || state == jQuery.fn.zaSignUp.SIGNUP_STATE.ACCOUNT_CREATED){
+handleOnSignupSuccess();
+}else{
+$('.successLoading').hide();
+$('.submitSignUp').removeClass('diableBtnSignup');//No i18N
+$('.sgnemail').prop("disabled", false);  //NO I18N
+$('#country, #state').prop("disabled", false);  //NO I18N
+} 
+},
+handleConfirmation:function(data) {
+handleOnSignupSuccess();
+},
+disableSubmit : function() {
+return false;
+}
+});
+$('.za-newsletter-container').hide();
+getAllowedCountries();
+
+}</script>
+<input type="checkbox" id="i18n_onclick_handler" style="display: none;"></body>
+</html>
