@@ -17,7 +17,7 @@ body.mp0 {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-2) 100%);
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,7 +49,7 @@ body.mp0 .login-box {
   border: 1px solid var(--primary);
   border-radius: 20px;
   padding: 36px;
-  box-shadow: 0 20px 40px rgba(4, 161, 64, 0.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
 }
 
@@ -374,48 +374,52 @@ html body.mp0 .login-box::before{
   background:none;
 }
 
-/* D4A Logo (left side) */
+/* D4A Logo (left corner) with hover effect and Zoho Partner Logo (right corner) */
 html body.mp0 .login-box::after{
   content:"";
   position:absolute;
-  top:36px;
-  left:50%;
-  transform:translateX(-50%);
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  width:calc(100% - 48px);
-  height:80px;
+  top:20px;
+  left:20px;
+  right:20px;
+  height:40px;
+  background-image:
+    url("https://demo.stackiz.in/d4a/logo.svg"),
+    url("https://www.d4aonline.com/files/Logo/Zoho%20advanced_partner%20Logo.png");
+  background-repeat:no-repeat, no-repeat;
+  background-position:left top, right top;
+  background-size:auto 40px, auto 32px;
+  z-index:1;
+  transition: background-image 0.3s ease;
+  pointer-events: none;
+}
+
+/* Hover effect for D4A logo */
+html body.mp0 .login-box:hover::after{
   background-image:
     url("https://demo.stackiz.in/d4a/logo-colour.svg"),
     url("https://www.d4aonline.com/files/Logo/Zoho%20advanced_partner%20Logo.png");
-  background-repeat:no-repeat, no-repeat;
-  background-position:24px center, calc(100% - 24px) center;
-  background-size:auto 60px, auto 50px;
-  z-index:1;
 }
 
-/* Adjust login box positioning for the dual logos */
+/* Adjust login box positioning for the corner logos */
 html body.mp0 .login-box{
   position:relative;
-  padding-top:56px;
+  padding-top:76px;
 }
 
 /* smaller on phones */
 @media (max-width:480px){
   html body.mp0 .login-box::before{
-    height:60px;
+    height:35px;
     margin-bottom:15px;
   }
   html body.mp0 .login-box::after{
-    top:28px;
-    height:60px;
-    width:calc(100% - 36px);
-    background-position:18px center, calc(100% - 18px) center;
-    background-size:auto 45px, auto 35px;
+    top:15px;
+    left:15px;
+    right:15px;
+    height:35px;
+    background-size:auto 35px, auto 28px;
   }
   html body.mp0 .login-box{
-    padding-top:48px;
+    padding-top:65px;
   }
-}
 }
