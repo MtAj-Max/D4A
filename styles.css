@@ -151,7 +151,8 @@ body.mp0 #show-password:hover { opacity: .85; }
 
 /* Country / State selects with custom chevron - IMPROVED VISIBILITY AND CENTERING */
 body.mp0 .za-country-container-arrow select.form-input,
-body.mp0 .za-state-container-arrow select.form-input {
+body.mp0 .za-state-container-arrow select.form-input,
+body.mp0 select.form-input.countryCnt.za-country-select {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.8' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 14px center;
@@ -166,6 +167,9 @@ body.mp0 .za-state-container-arrow select.form-input {
   overflow: visible !important;
   text-overflow: ellipsis;
   white-space: nowrap;
+  height: auto !important; /* FIX HEIGHT ISSUE - allow natural height */
+  min-height: 54px !important; /* Ensure minimum clickable area */
+  line-height: 1.4 !important; /* Better line height for text visibility */
 }
 
 /* BETTER option styling with centered text */
@@ -186,11 +190,16 @@ body.mp0 .za-tos-container {
   margin: 16px 0 8px !important;
 }
 
-body.mp0 .za-newsletter-container {
-  display: flex !important;
-  align-items: flex-start !important;
-  gap: 14px !important;
-  margin: 8px 0 !important;
+/* HIDE NEWSLETTER CONTAINER COMPLETELY */
+body.mp0 .za-newsletter-container,
+body.mp0 tr.za-newsletter-container {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* CUSTOM CHECKBOX STYLING - FIX FOR ZOHO'S CUSTOM CHECKBOX STRUCTURE */
@@ -270,61 +279,6 @@ body.mp0 .za-tos-container label.sign_agree {
   user-select: none !important;
   margin: 0 !important;
   padding: 0 !important;
-}
-
-/* Newsletter checkbox - if it exists */
-body.mp0 .za-newsletter-container input[type="checkbox"] {
-  width: 20px !important;
-  height: 20px !important;
-  min-width: 20px !important;
-  min-height: 20px !important;
-  margin: 2px 8px 0 0 !important;
-  padding: 0 !important;
-  cursor: pointer !important;
-  position: relative !important;
-  z-index: 10 !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  display: inline-block !important;
-  appearance: none !important;
-  background: #2a2a2a !important;
-  border: 2px solid var(--field-border) !important;
-  border-radius: 4px !important;
-  accent-color: var(--primary) !important;
-  flex-shrink: 0 !important;
-}
-
-body.mp0 .za-newsletter-container input[type="checkbox"]::after {
-  content: "✓" !important;
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  color: #ffffff !important;
-  font-size: 14px !important;
-  font-weight: bold !important;
-  opacity: 0 !important;
-  transition: opacity 0.2s ease !important;
-}
-
-body.mp0 .za-newsletter-container input[type="checkbox"]:checked::after {
-  opacity: 1 !important;
-}
-
-body.mp0 .za-newsletter-container input[type="checkbox"]:hover {
-  border-color: var(--primary) !important;
-  background: #3a3a3a !important;
-  transform: scale(1.05) !important;
-}
-
-body.mp0 .za-newsletter-container input[type="checkbox"]:focus {
-  outline: none !important;
-  box-shadow: 0 0 0 3px rgba(4, 161, 64, 0.3) !important;
-}
-
-body.mp0 .za-newsletter-container input[type="checkbox"]:checked {
-  background: var(--primary) !important;
-  border-color: var(--primary) !important;
 }
 
 /* ENSURE LABELS ARE CLICKABLE - UPDATED FOR ZOHO STRUCTURE */
@@ -595,8 +549,7 @@ html body.mp0 .login-box{
   }
   
   /* Better mobile checkbox visibility */
-  body.mp0 .za-tos-container input[type="checkbox"],
-  body.mp0 .za-newsletter-container input[type="checkbox"] {
+  body.mp0 .za-tos-container input[type="checkbox"] {
     width: 24px !important;
     height: 24px !important;
     min-width: 24px !important;
