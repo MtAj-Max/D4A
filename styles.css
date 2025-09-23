@@ -40,15 +40,15 @@ body.mp0 .mTop {
   z-index: 3;
 }
 
-/* Card container */
+/* Card container - increased width for better field visibility */
 body.mp0 .login-box {
   width: 100%;
-  max-width: 480px;
+  max-width: 520px; /* Increased from 480px */
   margin-top: 56px;
   background: #000000;
   border: 1px solid var(--primary);
   border-radius: 20px;
-  padding: 36px;
+  padding: 40px; /* Increased from 36px */
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
 }
@@ -88,7 +88,7 @@ body.mp0 .fl { float: left; }
 body.mp0 .disBlock { display:block; }
 body.mp0 .zs-ml34 { margin-left: 0; } /* neutralize unwanted left margin */
 
-/* Form fields */
+/* Form fields - improved sizing */
 body.mp0 .form-input,
 body.mp0 input.sgnemail,
 body.mp0 select.form-input {
@@ -102,6 +102,7 @@ body.mp0 select.form-input {
   color: var(--text);
   transition: border-color .2s ease, box-shadow .2s ease, transform .15s ease, background .2s ease;
   appearance: none;
+  box-sizing: border-box; /* Ensure proper sizing */
 }
 
 body.mp0 .form-input::placeholder { color: var(--muted); font-weight: 400; }
@@ -148,39 +149,79 @@ body.mp0 #show-password {
 }
 body.mp0 #show-password:hover { opacity: .85; }
 
-/* Country / State selects with custom chevron */
+/* Country / State selects with custom chevron - improved visibility */
 body.mp0 .za-country-container-arrow select.form-input,
 body.mp0 .za-state-container-arrow select.form-input {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.6' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 12px center;
   background-size: 16px;
-  padding-right: 40px;
+  padding-right: 45px; /* Increased padding for better visibility */
   cursor: pointer;
+  min-width: 0; /* Prevent flex shrinking issues */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-/* TOS + Newsletter */
+/* Better option styling */
+body.mp0 select.form-input option { 
+  white-space: normal; 
+  background: #1a1a1a;
+  color: var(--text);
+  padding: 8px 12px;
+}
+
+/* TOS + Newsletter - improved checkbox visibility and functionality */
 body.mp0 .za-tos-container {
   display: flex;
   align-items: flex-start;
   gap: 12px;
   margin: 14px 0 6px;
 }
+
 body.mp0 .za-tos-container input[type="checkbox"],
 body.mp0 .za-newsletter-container input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
+  width: 20px; /* Increased size */
+  height: 20px; /* Increased size */
+  min-width: 20px; /* Prevent shrinking */
   accent-color: var(--primary);
   margin-top: 2px;
   cursor: pointer;
+  position: relative;
+  z-index: 2; /* Ensure it's clickable */
+  opacity: 1 !important; /* Force visibility */
+  appearance: auto; /* Use browser default styling for better visibility */
+  background-color: #1a1a1a;
+  border: 2px solid var(--field-border);
+  border-radius: 4px;
 }
+
+/* Checkbox hover effect */
+body.mp0 .za-tos-container input[type="checkbox"]:hover,
+body.mp0 .za-newsletter-container input[type="checkbox"]:hover {
+  border-color: var(--primary);
+  background-color: #2a2a2a;
+}
+
+/* Checkbox focus effect */
+body.mp0 .za-tos-container input[type="checkbox"]:focus,
+body.mp0 .za-newsletter-container input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(4, 161, 64, 0.15);
+}
+
+/* Ensure labels are clickable */
 body.mp0 .sign_agree,
 body.mp0 .news-signup {
   font-size: 14px;
   color: var(--text-muted);
   line-height: 1.5;
   cursor: pointer;
+  user-select: none;
+  flex: 1; /* Take remaining space */
 }
+
 body.mp0 .sign_agree a,
 body.mp0 .news-signup a {
   color: var(--primary);
@@ -295,7 +336,12 @@ body.mp0 .end_field_msg_samedomain {
 }
 
 /* Newsletter row spacing when it appears */
-body.mp0 .za-newsletter-container { margin-top: -6px; }
+body.mp0 .za-newsletter-container { 
+  margin-top: -6px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
 
 /* Small utility tweaks for table cells that carry alignment class */
 body.mp0 .signUp-tdAlignLeft { text-align: left; }
@@ -307,9 +353,10 @@ body.mp0 .signUp-tdAlignLeft { text-align: left; }
     padding: 8px 14px;
   }
   body.mp0 .login-box {
-    padding: 28px 18px;
+    padding: 32px 20px; /* Increased padding */
     margin: 20px 10px;
     margin-top: 78px;
+    max-width: 100%;
   }
   body.mp0 .welcomeMessage { font-size: 24px; }
 }
@@ -332,9 +379,6 @@ body.mp0 .signupArea {
   justify-content: center;
   gap: 10px;
 }
-
-/* Prevent long option text from breaking selects weirdly */
-body.mp0 select.form-input option { white-space: normal; }
 
 /* --- kill Zoho pill + default logo (win against later CSS) --- */
 html body.mp0 .mTop{
@@ -374,7 +418,7 @@ html body.mp0 .login-box::before{
   background:none;
 }
 
-/* D4A Logo (left corner) with hover effect and Zoho Partner Logo (right corner) */
+/* D4A Logo (left corner) with hover effect and Zoho Partner Logo (right corner) - SAME SIZE */
 html body.mp0 .login-box::after{
   content:"";
   position:absolute;
@@ -387,7 +431,7 @@ html body.mp0 .login-box::after{
     url("https://www.d4aonline.com/files/Logo/Zoho%20advanced_partner%20Logo.png");
   background-repeat:no-repeat, no-repeat;
   background-position:left top, right top;
-  background-size:auto 40px, auto 32px;
+  background-size:auto 40px, auto 40px; /* SAME SIZE - both 40px height */
   z-index:1;
   transition: background-image 0.3s ease;
   pointer-events: none;
@@ -398,6 +442,7 @@ html body.mp0 .login-box:hover::after{
   background-image:
     url("https://demo.stackiz.in/d4a/logo-colour.svg"),
     url("https://www.d4aonline.com/files/Logo/Zoho%20advanced_partner%20Logo.png");
+  background-size:auto 40px, auto 40px; /* Maintain same size on hover */
 }
 
 /* Adjust login box positioning for the corner logos */
@@ -417,9 +462,17 @@ html body.mp0 .login-box{
     left:15px;
     right:15px;
     height:35px;
-    background-size:auto 35px, auto 28px;
+    background-size:auto 35px, auto 35px; /* Same size on mobile too */
   }
   html body.mp0 .login-box{
     padding-top:65px;
+  }
+  
+  /* Better mobile checkbox visibility */
+  body.mp0 .za-tos-container input[type="checkbox"],
+  body.mp0 .za-newsletter-container input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
   }
 }
