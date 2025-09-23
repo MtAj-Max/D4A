@@ -272,7 +272,7 @@ body.mp0 .za-submitbtn-otp .signupbtn {
 }
 body.mp0 .za-submitbtn-otp .signupbtn:hover { transform: translateY(-1px); }
 
-/* Error states (jQuery Validate + Zoho’s jqval-error spans) */
+/* Error states (jQuery Validate + Zoho's jqval-error spans) */
 body.mp0 .jqval-error,
 body.mp0 .error {
   color: var(--danger);
@@ -322,10 +322,10 @@ body.mp0 .form-input:focus-visible {
   box-shadow: 0 0 0 3px rgba(102,126,234,.25);
 }
 
-/* Hide Zoho’s captcha refresh default sprite border (if shown) */
+/* Hide Zoho's captcha refresh default sprite border (if shown) */
 body.mp0 .za-refresh-captcha { border: 0; }
 
-/* Keep the Sign Up button’s inner layout tidy */
+/* Keep the Sign Up button's inner layout tidy */
 body.mp0 .signupArea {
   display: inline-flex;
   align-items: center;
@@ -336,4 +336,85 @@ body.mp0 .signupArea {
 /* Prevent long option text from breaking selects weirdly */
 body.mp0 select.form-input option { white-space: normal; }
 
+/* --- kill Zoho pill + default logo (win against later CSS) --- */
+html body.mp0 .mTop{
+  display:none !important;
+  visibility:hidden !important;
+  opacity:0 !important;
+  height:0 !important;
+  margin:0 !important;
+  padding:0 !important;
+}
 
+html body.mp0 img.serviceLogo{
+  display:none !important;
+  visibility:hidden !important;
+}
+
+/* the wrapper that holds the CRM logo */
+html body.mp0 .login-box > form > div > div[align="center"]{
+  display:none !important;
+}
+
+/* if you previously added a logo before the title, neutralize it */
+html body.mp0 .welcomeMessage::before{
+  content:none !important;
+}
+
+/* --- inject your D4A logo and Zoho Partner logo above the form title --- */
+html body.mp0 .login-box::before{
+  content:"";
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+  width:100%;
+  height:80px;
+  margin:0 auto 20px;
+  background:none;
+}
+
+/* D4A Logo (left side) */
+html body.mp0 .login-box::after{
+  content:"";
+  position:absolute;
+  top:36px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+  width:calc(100% - 72px);
+  height:80px;
+  background-image:
+    url("https://demo.stackiz.in/d4a/logo-colour.svg"),
+    url("https://www.d4aonline.com/files/Logo/Zoho%20advanced_partner%20Logo.png");
+  background-repeat:no-repeat, no-repeat;
+  background-position:left center, right center;
+  background-size:auto 60px, auto 50px;
+  z-index:1;
+}
+
+/* Adjust login box positioning for the dual logos */
+html body.mp0 .login-box{
+  position:relative;
+  padding-top:56px;
+}
+
+/* smaller on phones */
+@media (max-width:480px){
+  html body.mp0 .login-box::before{
+    height:60px;
+    margin-bottom:15px;
+  }
+  html body.mp0 .login-box::after{
+    top:28px;
+    height:60px;
+    gap:15px;
+    background-size:auto 45px, auto 35px;
+  }
+  html body.mp0 .login-box{
+    padding-top:48px;
+  }
+}
