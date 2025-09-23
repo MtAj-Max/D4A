@@ -335,3 +335,34 @@ body.mp0 .signupArea {
 
 /* Prevent long option text from breaking selects weirdly */
 body.mp0 select.form-input option { white-space: normal; }
+
+/* === Hide Zoho banner + default product logo === */
+body.mp0 .mTop { 
+  display: none !important;
+}
+body.mp0 img.serviceLogo {
+  display: none !important;
+}
+
+/* === Inject your D4A logo above the page title === */
+body.mp0 .welcomeMessage::before {
+  content: "";
+  display: block;
+  width: 140px;           /* tweak if you need it larger/smaller */
+  height: 140px;
+  margin: 0 auto 12px;
+  background-image: url("https://www.d4aonline.com/files/Logo/D4A-logo%20Only-final-vertical%20-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  body.mp0 .welcomeMessage::before {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 10px;
+  }
+}
+
