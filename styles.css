@@ -223,11 +223,11 @@ body.mp0 .za-newsletter-container input[type="checkbox"]:focus {
   box-shadow: 0 0 0 3px rgba(4, 161, 64, 0.3) !important;
 }
 
-body.mp0 .za-tos-container input[type="checkbox"]:checked,
+/* body.mp0 .za-tos-container input[type="checkbox"]:checked,
 body.mp0 .za-newsletter-container input[type="checkbox"]:checked {
   background: var(--primary) !important;
   border-color: var(--primary) !important;
-}
+} */
 
 /* ENSURE LABELS ARE CLICKABLE */
 body.mp0 .sign_agree,
@@ -314,7 +314,7 @@ body.mp0 .verifyheader {
   font-size: 14px;
   margin-bottom: 10px;
 }
-body.mp0 .za-otp-container dd input.form-input { letter-spacing: 2px; }
+/* body.mp0 .za-otp-container dd input.form-input { letter-spacing: 2px; } */
 body.mp0 .resendotp {
   margin-left: 10px;
   font-size: 13px;
@@ -358,7 +358,7 @@ body.mp0 .end_field_msg_samedomain {
 }
 
 /* Small utility tweaks for table cells that carry alignment class */
-body.mp0 .signUp-tdAlignLeft { text-align: left; }
+/* body.mp0 .signUp-tdAlignLeft { text-align: left; } */
 
 /* Responsiveness */
 @media (max-width: 768px) {
