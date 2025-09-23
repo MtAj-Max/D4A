@@ -336,33 +336,48 @@ body.mp0 .signupArea {
 /* Prevent long option text from breaking selects weirdly */
 body.mp0 select.form-input option { white-space: normal; }
 
-/* === Hide Zoho banner + default product logo === */
-body.mp0 .mTop { 
-  display: none !important;
-}
-body.mp0 img.serviceLogo {
-  display: none !important;
-}
-
-/* === Inject your D4A logo above the page title === */
-body.mp0 .welcomeMessage::before {
-  content: "";
-  display: block;
-  width: 140px;           /* tweak if you need it larger/smaller */
-  height: 140px;
-  margin: 0 auto 12px;
-  background-image: url("https://www.d4aonline.com/files/Logo/D4A-logo%20Only-final-vertical%20-1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+/* --- kill Zoho pill + default logo (win against later CSS) --- */
+html body.mp0 .mTop{
+  display:none !important;
+  visibility:hidden !important;
+  opacity:0 !important;
+  height:0 !important;
+  margin:0 !important;
+  padding:0 !important;
 }
 
-/* Small screens */
-@media (max-width: 480px) {
-  body.mp0 .welcomeMessage::before {
-    width: 110px;
-    height: 110px;
-    margin-bottom: 10px;
+html body.mp0 img.serviceLogo{
+  display:none !important;
+  visibility:hidden !important;
+}
+
+/* the wrapper that holds the CRM logo */
+html body.mp0 .login-box > form > div > div[align="center"]{
+  display:none !important;
+}
+
+/* if you previously added a logo before the title, neutralize it */
+html body.mp0 .welcomeMessage::before{
+  content:none !important;
+}
+
+/* --- inject your D4A logo above the form title --- */
+html body.mp0 .login-box::before{
+  content:"";
+  display:block;
+  width:140px;           /* adjust as needed */
+  height:140px;
+  margin:0 auto 12px;
+  background-image:url("https://www.d4aonline.com/files/Logo/D4A-logo%20Only-final-vertical%20-1.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+}
+
+/* smaller on phones */
+@media (max-width:480px){
+  html body.mp0 .login-box::before{
+    width:110px;height:110px;margin-bottom:10px;
   }
 }
 
