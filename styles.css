@@ -5,13 +5,13 @@
    ========================================= */
 
 body.mp0 {
-  --primary: #667eea;
-  --primary-2: #764ba2;
-  --text: #2d3748;
-  --text-muted: #4a5568;
+  --primary: #04A140;
+  --primary-2: #026B2A;
+  --text: #ffffff;
+  --text-muted: #e2e8f0;
   --muted: #a0aec0;
-  --field-border: #e2e8f0;
-  --field-border-hover: #cbd5e0;
+  --field-border: #374151;
+  --field-border-hover: #4b5563;
   --danger: #e53e3e;
 
   margin: 0;
@@ -45,11 +45,11 @@ body.mp0 .login-box {
   width: 100%;
   max-width: 480px;
   margin-top: 56px;
-  background: rgba(255, 255, 255, 0.96);
-  border: 1px solid rgba(255,255,255,0.25);
+  background: #000000;
+  border: 1px solid var(--primary);
   border-radius: 20px;
   padding: 36px;
-  box-shadow: 0 20px 40px rgba(0,0,0,.12);
+  box-shadow: 0 20px 40px rgba(4, 161, 64, 0.25);
   backdrop-filter: blur(10px);
 }
 
@@ -98,7 +98,7 @@ body.mp0 select.form-input {
   border-radius: 12px;
   font-size: 16px;
   line-height: 1.2;
-  background: rgba(255,255,255,.98);
+  background: #1a1a1a;
   color: var(--text);
   transition: border-color .2s ease, box-shadow .2s ease, transform .15s ease, background .2s ease;
   appearance: none;
@@ -108,20 +108,20 @@ body.mp0 .form-input::placeholder { color: var(--muted); font-weight: 400; }
 
 body.mp0 .form-input:hover:not(:focus) {
   border-color: var(--field-border-hover);
-  background: #fff;
+  background: #2a2a2a;
 }
 
 body.mp0 .form-input:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(102,126,234,.15);
+  box-shadow: 0 0 0 3px rgba(4, 161, 64, 0.15);
   transform: translateY(-1px);
   animation: mp0-focusGlow .25s ease-in-out;
 }
 
 @keyframes mp0-focusGlow {
-  from { box-shadow: 0 0 0 0 rgba(102,126,234,.35); }
-  to   { box-shadow: 0 0 0 3px rgba(102,126,234,.15); }
+  from { box-shadow: 0 0 0 0 rgba(4, 161, 64, 0.35); }
+  to   { box-shadow: 0 0 0 3px rgba(4, 161, 64, 0.15); }
 }
 
 /* Company name input wrapper */
@@ -210,7 +210,7 @@ body.mp0 .submit-btn.submitSignUp {
 }
 body.mp0 .submit-btn.submitSignUp:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(102,126,234,.30);
+  box-shadow: 0 10px 24px rgba(4, 161, 64, 0.30);
 }
 body.mp0 .submit-btn.submitSignUp:active {
   transform: translateY(0);
@@ -319,7 +319,7 @@ body.mp0 .submit-btn:focus-visible,
 body.mp0 .signupbtn:focus-visible,
 body.mp0 .form-input:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(102,126,234,.25);
+  box-shadow: 0 0 0 3px rgba(4, 161, 64, 0.25);
 }
 
 /* Hide Zoho's captcha refresh default sprite border (if shown) */
@@ -383,15 +383,14 @@ html body.mp0 .login-box::after{
   transform:translateX(-50%);
   display:flex;
   align-items:center;
-  justify-content:center;
-  gap:20px;
-  width:calc(100% - 72px);
+  justify-content:space-between;
+  width:calc(100% - 48px);
   height:80px;
   background-image:
     url("https://demo.stackiz.in/d4a/logo-colour.svg"),
     url("https://www.d4aonline.com/files/Logo/Zoho%20advanced_partner%20Logo.png");
   background-repeat:no-repeat, no-repeat;
-  background-position:left center, right center;
+  background-position:24px center, calc(100% - 24px) center;
   background-size:auto 60px, auto 50px;
   z-index:1;
 }
@@ -411,10 +410,12 @@ html body.mp0 .login-box{
   html body.mp0 .login-box::after{
     top:28px;
     height:60px;
-    gap:15px;
+    width:calc(100% - 36px);
+    background-position:18px center, calc(100% - 18px) center;
     background-size:auto 45px, auto 35px;
   }
   html body.mp0 .login-box{
     padding-top:48px;
   }
+}
 }
